@@ -158,7 +158,19 @@ function Home() {
 
       <main className="video-list">
         {videosData.map((video, index) => (
-          <VideoItem key={index} video={video} index={index} />
+          <React.Fragment key={index}>
+            <VideoItem video={video} index={index} />
+            <div style={{ textAlign: 'center', marginBottom: '1.5rem', marginTop: '-0.5rem' }}>
+              <a
+                href="https://www.effectivegatecpm.com/xhbwufw17?key=e5c036ac8f77ae8e4cabf6cd365aca39"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: '#60a5fa', fontSize: '0.9rem', textDecoration: 'none', padding: '0.4rem 1rem', background: 'transparent', borderRadius: '4px', display: 'inline-block' }}
+              >
+                don't click me 😂
+              </a>
+            </div>
+          </React.Fragment>
         ))}
       </main>
     </div>
