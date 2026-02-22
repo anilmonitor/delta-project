@@ -49,14 +49,15 @@ export default function DownloadAll() {
         { label: 'Part 1 (Videos 1 to 56)', start: 0, end: 56 },
         { label: 'Part 2 (Videos 57 to 112)', start: 56, end: 112 },
         { label: 'Part 3 (Videos 113 to 168)', start: 112, end: 168 },
-        { label: 'Part 4 (Videos 169 to 224)', start: 168, end: 224 }
+        { label: 'Part 4 (Videos 169 to 204)', start: 168, end: 204 },
+        { label: 'Part 5 (Videos 205 to 224)', start: 204, end: 224 }
     ];
 
     return (
         <div className="app-container" style={{ animation: 'fadeIn 0.6s ease-out both' }}>
             <header>
                 <h1>Complete Course Archive</h1>
-                <p className="header-subtitle">Download all {videosData.length} video lectures separated into 4 manageable ZIP bundles.</p>
+                <p className="header-subtitle">Download all {videosData.length} video lectures separated into 5 manageable ZIP bundles.</p>
             </header>
 
             <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '3rem' }}>
@@ -64,7 +65,7 @@ export default function DownloadAll() {
                     <div style={{ textAlign: 'center' }}>
                         <h2 style={{ fontSize: '1.8rem', background: 'linear-gradient(to right, #60a5fa, #a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', margin: 0 }}>Full Course Bundles</h2>
                         <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '1rem' }}>
-                            To make downloading robust, the {videosData.length} videos have been split into 4 <code style={{ background: 'rgba(59, 130, 246, 0.1)', color: '#60a5fa', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>MP4 BATCHES</code>. Clicking one will download the videos directly to your device sequentially.
+                            To make downloading robust, the {videosData.length} videos have been split into 5 <code style={{ background: 'rgba(59, 130, 246, 0.1)', color: '#60a5fa', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>MP4 BATCHES</code>. Clicking one will download the videos directly to your device sequentially.
                             <br /><br />
                             <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: 'var(--text-primary)' }}>Total course size: {formatBytes(videosData.reduce((acc, curr) => acc + (curr.size || 0), 0))}</span>
                         </p>
