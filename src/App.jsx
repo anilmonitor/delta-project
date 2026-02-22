@@ -28,39 +28,25 @@ function VideoItem({ video, index }) {
     setError(null);
 
     try {
-      // Fetch wistia embed metadata through our local Vite proxy
-      const res = await fetch(`/api/wistia/${wistiaId}`);
-      if (!res.ok) throw new Error("Metadata limit or CORS block");
-      const metadata = await res.json();
+      let targetUrl = video.mp4Url;
+      if (!targetUrl) throw new Error("No MP4 source found in video data");
 
-      if (metadata.error) {
-        throw new Error("Wistia block error");
-      }
+      // Fetch the video completely client-side. Wistia supports CORS natively!
+      // This bypasses Vercel/Netlify proxy limits (404s/payload caps) entirely.
+      const res = await fetch(targetUrl);
+      if (!res.ok) throw new Error("Video stream blocked or timed out");
 
-      // Find original mp4 asset
-      const assets = metadata.media?.assets || [];
-      // Prefer "original" type or at least an mp4 format
-      let bestAsset = assets.find(a => a.type === 'original' && a.ext === 'mp4');
-      if (!bestAsset) {
-        bestAsset = assets.reverse().find(a => a.ext === 'mp4');
-      }
-
-      if (!bestAsset || !bestAsset.url) {
-        throw new Error("No MP4 source found");
-      }
-
-      // Directly downloading the `.bin` or triggering local proxy download
-      const targetUrl = bestAsset.url;
-      // Redirect to the proxy local download endpoint which converts it to a standard MP4 file download attachment
-      const b64Url = btoa(targetUrl);
-      const downloadLink = `/api/download?b64=${b64Url}&title=${encodeURIComponent(video.title)}`;
+      const blob = await res.blob();
+      const localBlobUrl = URL.createObjectURL(blob);
 
       const a = document.createElement('a');
-      a.href = downloadLink;
-      a.download = `${video.title}.mp4`;
+      a.href = localBlobUrl;
+      a.download = `${video.title.replace(/[^a-z0-9\s]/gi, '').trim()}.mp4`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
+
+      setTimeout(() => URL.revokeObjectURL(localBlobUrl), 10000);
 
     } catch (err) {
       console.error(err);
@@ -123,7 +109,7 @@ function Home() {
           <h2 style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '1.5rem', color: 'var(--text-primary)' }}>Preview: {videosData[0].title}</h2>
           <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.5)' }}>
             <video
-              src={`/api/download?b64=${btoa(videosData[0].mp4Url)}&title=preview`}
+              src={videosData[0].mp4Url}
               autoPlay
               loop
               muted

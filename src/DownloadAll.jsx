@@ -5,14 +5,43 @@ import { formatBytes } from './utils';
 export default function DownloadAll() {
     const [downloading, setDownloading] = useState(null);
 
-    const handleDownloadZip = (start, end, partNum) => {
+    const handleDownloadPart = async (start, end, partNum) => {
+        if (!window.confirm(`This will download ${end - start} videos sequentially directly into your Downloads folder. \n\nPlease allow your browser to download multiple files when prompted.`)) return;
+
         setDownloading(partNum);
         try {
-            // Trigger the backend download zip endpoint with start and end params
-            window.location.href = `/api/download-zip?start=${start}&end=${end}`;
+            for (let i = start; i < end; i++) {
+                const video = videosData[i];
+                if (!video || !video.mp4Url) continue;
+
+                // Fetch the video client-side one-by-one.
+                const res = await fetch(video.mp4Url);
+                if (!res.ok) continue;
+
+                const blob = await res.blob();
+                const localBlobUrl = URL.createObjectURL(blob);
+
+                const safeName = video.title.replace(/[^a-z0-9\s]/gi, '').trim() || `video_${i + 1}`;
+                const filename = `${String(i + 1).padStart(3, '0')}_${safeName}.mp4`;
+
+                const a = document.createElement('a');
+                a.href = localBlobUrl;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+
+                // Keep the object in memory for a short time so browser can read it, then clean up
+                setTimeout(() => URL.revokeObjectURL(localBlobUrl), 15000);
+
+                // Pause for 1 second between files
+                await new Promise(r => setTimeout(r, 1000));
+            }
+        } catch (err) {
+            console.error("Batch download error:", err);
+            alert("An error occurred during batch download: " + err.message);
         } finally {
-            // Unset loading state shortly after triggering download
-            setTimeout(() => setDownloading(null), 5000);
+            setDownloading(null);
         }
     };
 
@@ -35,7 +64,7 @@ export default function DownloadAll() {
                     <div style={{ textAlign: 'center' }}>
                         <h2 style={{ fontSize: '1.8rem', background: 'linear-gradient(to right, #60a5fa, #a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', margin: 0 }}>Full Course Bundles</h2>
                         <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', marginTop: '1rem' }}>
-                            To make downloading robust, the {videosData.length} videos have been split into 4 <code style={{ background: 'rgba(59, 130, 246, 0.1)', color: '#60a5fa', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>ZIP FORMAT</code> files.
+                            To make downloading robust, the {videosData.length} videos have been split into 4 <code style={{ background: 'rgba(59, 130, 246, 0.1)', color: '#60a5fa', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>MP4 BATCHES</code>. Clicking one will download the videos directly to your device sequentially.
                             <br /><br />
                             <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: 'var(--text-primary)' }}>Total course size: {formatBytes(videosData.reduce((acc, curr) => acc + (curr.size || 0), 0))}</span>
                         </p>
@@ -52,7 +81,7 @@ export default function DownloadAll() {
                                     </div>
                                     <button
                                         className="download-btn"
-                                        onClick={() => handleDownloadZip(p.start, p.end, i + 1)}
+                                        onClick={() => handleDownloadPart(p.start, p.end, i + 1)}
                                         disabled={downloading !== null && downloading !== i + 1}
                                         style={{ padding: '0.8rem 1.5rem', opacity: (downloading !== null && downloading !== i + 1) ? 0.5 : 1 }}
                                     >
