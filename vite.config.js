@@ -37,7 +37,10 @@ function wistiaDownloader() {
         // --- 2. SINGLE DOWNLOAD STREAM PROXY ---
         if (req.url.startsWith('/api/download?') || req.url === '/api/download') {
           const urlParams = new URLSearchParams(req.url.split('?')[1]);
-          const targetUrl = urlParams.get('url');
+          let targetUrl = urlParams.get('url');
+          if (urlParams.get('b64')) {
+            targetUrl = Buffer.from(urlParams.get('b64'), 'base64').toString('ascii');
+          }
           let title = urlParams.get('title') || 'video';
           title = title.replace(/[^a-z0-9]/gi, '_').toLowerCase();
 

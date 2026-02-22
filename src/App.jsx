@@ -52,7 +52,8 @@ function VideoItem({ video, index }) {
       // Directly downloading the `.bin` or triggering local proxy download
       const targetUrl = bestAsset.url;
       // Redirect to the proxy local download endpoint which converts it to a standard MP4 file download attachment
-      const downloadLink = `/api/download?url=${encodeURIComponent(targetUrl)}&title=${encodeURIComponent(video.title)}`;
+      const b64Url = btoa(targetUrl);
+      const downloadLink = `/api/download?b64=${b64Url}&title=${encodeURIComponent(video.title)}`;
 
       const a = document.createElement('a');
       a.href = downloadLink;
@@ -122,11 +123,13 @@ function Home() {
           <h2 style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '1.5rem', color: 'var(--text-primary)' }}>Preview: {videosData[0].title}</h2>
           <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.5)' }}>
             <video
-              src={`/api/download?url=${encodeURIComponent(videosData[0].mp4Url)}&title=preview`}
+              src={`/api/download?b64=${btoa(videosData[0].mp4Url)}&title=preview`}
               autoPlay
               loop
               muted
               controls
+              controlsList="nodownload"
+              onContextMenu={(e) => e.preventDefault()}
               style={{ width: '100%', display: 'block' }}
             />
           </div>
