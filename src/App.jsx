@@ -17,8 +17,6 @@ function AdBanner() {
   const banner = useRef(null);
 
   useEffect(() => {
-    // React blocks raw <script> tags inside JSX for security reasons,
-    // so we must inject your exact ad code this way in order for it to work.
     if (!banner.current || banner.current.firstChild) return;
 
     const conf = document.createElement('script');
@@ -41,9 +39,8 @@ function AdBanner() {
   }, []);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', margin: '0', width: '100%' }}>
-      {/* We apply a CSS scale to make the 300x250 ad visually smaller as requested */}
-      <div ref={banner} style={{ transform: 'scale(0.7)', transformOrigin: 'center center', maxHeight: '175px' }}></div>
+    <div style={{ display: 'flex', justifyContent: 'center', margin: '1rem 0 3rem 0', width: '100%' }}>
+      <div ref={banner} style={{ transform: 'scale(0.8)', transformOrigin: 'top center', maxHeight: '200px' }}></div>
     </div>
   );
 }
@@ -157,13 +154,11 @@ function Home() {
         </div>
       )}
 
+      <AdBanner />
+
       <main className="video-list">
         {videosData.map((video, index) => (
-          <React.Fragment key={index}>
-            <VideoItem video={video} index={index} />
-            {/* Show Ad after every 2 lectures */}
-            {(index + 1) % 2 === 0 && <AdBanner />}
-          </React.Fragment>
+          <VideoItem key={index} video={video} index={index} />
         ))}
       </main>
     </div>
