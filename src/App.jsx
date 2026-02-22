@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import videosData from './videos.json';
 import Navbar from './Navbar';
@@ -11,6 +11,38 @@ import { formatBytes } from './utils';
 function getWistiaId(url) {
   const match = url.match(/\/medias\/([a-zA-Z0-9]+)\./);
   return match ? match[1] : null;
+}
+
+function AdBanner() {
+  const banner = useRef(null);
+
+  useEffect(() => {
+    if (!banner.current || banner.current.firstChild) return;
+
+    const conf = document.createElement('script');
+    const script = document.createElement('script');
+
+    script.type = 'text/javascript';
+    script.src = "//www.highperformanceformat.com/0d401675cc48579a59d4ba8c1fb0d6b7/invoke.js";
+
+    conf.type = 'text/javascript';
+    conf.innerHTML = `atOptions = {
+      'key' : '0d401675cc48579a59d4ba8c1fb0d6b7',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };`;
+
+    banner.current.append(conf);
+    banner.current.append(script);
+  }, []);
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0', width: '100%', minHeight: '250px' }}>
+      <div ref={banner}></div>
+    </div>
+  );
 }
 
 function VideoItem({ video, index }) {
@@ -124,7 +156,10 @@ function Home() {
 
       <main className="video-list">
         {videosData.map((video, index) => (
-          <VideoItem key={index} video={video} index={index} />
+          <React.Fragment key={index}>
+            <VideoItem video={video} index={index} />
+            {(index + 1) % 4 === 0 && <AdBanner />}
+          </React.Fragment>
         ))}
       </main>
     </div>
