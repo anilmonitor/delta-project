@@ -59,13 +59,18 @@ function wistiaDownloader() {
 
         // --- 3. BATCH ZIP DOWNLOAD ---
         if (req.url.startsWith('/api/download-zip')) {
+          const urlParams = new URLSearchParams(req.url.split('?')[1] || '');
+          const start = parseInt(urlParams.get('start') || '0', 10);
+          const end = parseInt(urlParams.get('end') || '224', 10);
+
           // Read the videos JSON data securely from fs
           const videosFile = path.resolve(__dirname, 'src/videos.json');
-          const videos = JSON.parse(fs.readFileSync(videosFile, 'utf-8'));
+          const allVideos = JSON.parse(fs.readFileSync(videosFile, 'utf-8'));
+          const videos = allVideos.slice(start, end);
 
           // Set immediate headers so the browser triggers a file download instantly
           res.setHeader('Content-Type', 'application/zip');
-          res.setHeader('Content-Disposition', 'attachment; filename="Delta_8.0_Complete_Course.zip"');
+          res.setHeader('Content-Disposition', `attachment; filename="Delta_8.0_Complete_Course_Part_${start + 1}_to_${Math.min(end, allVideos.length)}.zip"`);
 
           // Initialize the Archiver instance and pipe to HTTP response explicitly
           const archive = archiver('zip', {
@@ -114,7 +119,8 @@ function wistiaDownloader() {
 
                 // Make safe filename
                 const safeTitle = video.title.replace(/[^a-z0-9]/gi, '_');
-                const zipFilename = `videos/${String(i + 1).padStart(3, '0')}_${safeTitle}.mp4`;
+                const originalIndex = start + i + 1;
+                const zipFilename = `videos/${String(originalIndex).padStart(3, '0')}_${safeTitle}.mp4`;
 
                 // Add to archive natively! This buffers it internally.
                 console.log(`[ZIP] Appending stream for ${zipFilename}`);

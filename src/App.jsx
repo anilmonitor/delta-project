@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import videosData from './videos.json';
 import Navbar from './Navbar';
 import DownloadAll from './DownloadAll';
+import AboutUs from './AboutUs';
+import Footer from './Footer';
+import { formatBytes } from './utils';
 
 // Helper to extract Wistia ID from URL like "https://fast.wistia.com/embed/medias/ocl4ate6f4.m3u8"
 function getWistiaId(url) {
@@ -71,7 +74,10 @@ function VideoItem({ video, index }) {
     <div className="video-card" style={{ animationDelay: `${(index % 10) * 0.05}s` }}>
       <div className="video-info">
         <div className="video-index">{index + 1}</div>
-        <h3 className="video-title">{video.title}</h3>
+        <div>
+          <h3 className="video-title">{video.title}</h3>
+          <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{formatBytes(video.size)}</span>
+        </div>
       </div>
       <div>
         {error ? (
@@ -111,6 +117,22 @@ function Home() {
         <p className="header-subtitle">Download all Delta 8.0 : Complete Web Development!. Projects Video in one click.</p>
       </header>
 
+      {videosData.length > 0 && videosData[0].mp4Url && (
+        <div style={{ marginBottom: '3rem', marginTop: '2rem' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '1.5rem', color: 'var(--text-primary)' }}>Preview: {videosData[0].title}</h2>
+          <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.5)' }}>
+            <video
+              src={`/api/download?url=${encodeURIComponent(videosData[0].mp4Url)}&title=preview`}
+              autoPlay
+              loop
+              muted
+              controls
+              style={{ width: '100%', display: 'block' }}
+            />
+          </div>
+        </div>
+      )}
+
       <main className="video-list">
         {videosData.map((video, index) => (
           <VideoItem key={index} video={video} index={index} />
@@ -127,7 +149,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/download-all" element={<DownloadAll />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
