@@ -1,0 +1,898 @@
+[
+  {
+    "title": "Welcome to DevHub Library!",
+    "url": "https://fast.wistia.com/embed/medias/y9vq324nox.m3u8"
+  },
+  {
+    "title": "Project Demo",
+    "url": "https://fast.wistia.com/embed/medias/ocl4ate6f4.m3u8"
+  },
+  {
+    "title": "Installing Basic Tools",
+    "url": "https://fast.wistia.com/embed/medias/yl02u9j22k.m3u8"
+  },
+  {
+    "title": "Project Overview",
+    "url": "https://fast.wistia.com/embed/medias/f43z8bnizp.m3u8"
+  },
+  {
+    "title": "Setting up our React Project",
+    "url": "https://fast.wistia.com/embed/medias/086xka6jpa.m3u8"
+  },
+  {
+    "title": "Default Files & Folders",
+    "url": "https://fast.wistia.com/embed/medias/ng8lyeysno.m3u8"
+  },
+  {
+    "title": "Identifying Major Components",
+    "url": "https://fast.wistia.com/embed/medias/uii0xarv73.m3u8"
+  },
+  {
+    "title": "Structuring Landing Page",
+    "url": "https://fast.wistia.com/embed/medias/0r0swr3h8u.m3u8"
+  },
+  {
+    "title": "Home Components (Part 1)",
+    "url": "https://fast.wistia.com/embed/medias/bwzzczq48w.m3u8"
+  },
+  {
+    "title": "Home Components (Part 2)",
+    "url": "https://fast.wistia.com/embed/medias/ftxlk9rh1k.m3u8"
+  },
+  {
+    "title": "Home Components (Part 3)",
+    "url": "https://fast.wistia.com/embed/medias/syhs7ytyar.m3u8"
+  },
+  {
+    "title": "Home Components (Part 4)",
+    "url": "https://fast.wistia.com/embed/medias/ejmzs3xfbr.m3u8"
+  },
+  {
+    "title": "Navbar, Footer & Open Account",
+    "url": "https://fast.wistia.com/embed/medias/b2w6q15f97.m3u8"
+  },
+  {
+    "title": "Setting up React Router",
+    "url": "https://fast.wistia.com/embed/medias/pauqgtjyl1.m3u8"
+  },
+  {
+    "title": "Implement \"About\" Component",
+    "url": "https://fast.wistia.com/embed/medias/7hzpwnqznl.m3u8"
+  },
+  {
+    "title": "LeftSection in \"Product\" Component",
+    "url": "https://fast.wistia.com/embed/medias/6agtc5hy0b.m3u8"
+  },
+  {
+    "title": "RightSection in \"Product\" Component",
+    "url": "https://fast.wistia.com/embed/medias/nto0yagebn.m3u8"
+  },
+  {
+    "title": "Implement \"Pricing\" Component",
+    "url": "https://fast.wistia.com/embed/medias/p86ohstwgd.m3u8"
+  },
+  {
+    "title": "\"Support\" Component (Part 1)",
+    "url": "https://fast.wistia.com/embed/medias/p2el0rrnam.m3u8"
+  },
+  {
+    "title": "\"Support\" Component (Part 2)",
+    "url": "https://fast.wistia.com/embed/medias/huyhidzq27.m3u8"
+  },
+  {
+    "title": "Exploring the Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/8zzt9gjy7u.m3u8"
+  },
+  {
+    "title": "Creating Dashboard Components",
+    "url": "https://fast.wistia.com/embed/medias/9k3efd3yr5.m3u8"
+  },
+  {
+    "title": "Setup Dashboard Menu",
+    "url": "https://fast.wistia.com/embed/medias/jhgpkx1wca.m3u8"
+  },
+  {
+    "title": "Add Data to Holdings & Positions",
+    "url": "https://fast.wistia.com/embed/medias/jf53fi99ll.m3u8"
+  },
+  {
+    "title": "\"WatchList\" Component (Part 1)",
+    "url": "https://fast.wistia.com/embed/medias/j74fsqnfhj.m3u8"
+  },
+  {
+    "title": "\"WatchList\" Component (Part 2)",
+    "url": "https://fast.wistia.com/embed/medias/t4bokziuej.m3u8"
+  },
+  {
+    "title": "\"WatchList\" Component (Part 3)",
+    "url": "https://fast.wistia.com/embed/medias/dc642quorc.m3u8"
+  },
+  {
+    "title": "Setting up MongoDB",
+    "url": "https://fast.wistia.com/embed/medias/0i5k2anyvp.m3u8"
+  },
+  {
+    "title": "Connect MongoDB with Express (Part a)",
+    "url": "https://fast.wistia.com/embed/medias/09ei101dsr.m3u8"
+  },
+  {
+    "title": "Connect MongoDB with Express (Part b)",
+    "url": "https://fast.wistia.com/embed/medias/7fsfpewrv0.m3u8"
+  },
+  {
+    "title": "Creating Schemas & Models",
+    "url": "https://fast.wistia.com/embed/medias/3ur3yldyfh.m3u8"
+  },
+  {
+    "title": "Holdings Starter Data",
+    "url": "https://fast.wistia.com/embed/medias/ofb9fzdtl8.m3u8"
+  },
+  {
+    "title": "Testing API Endpoints",
+    "url": "https://fast.wistia.com/embed/medias/767hjhuqdv.m3u8"
+  },
+  {
+    "title": "Fetch Data from Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/00yedhc51k.m3u8"
+  },
+  {
+    "title": "CRUD from the dashboard",
+    "url": "https://fast.wistia.com/embed/medias/1mrx1ourla.m3u8"
+  },
+  {
+    "title": "Implement User Authentication",
+    "url": "https://fast.wistia.com/embed/medias/y6ricgwwhr.m3u8"
+  },
+  {
+    "title": "Plotting Graphs with chart.js",
+    "url": "https://fast.wistia.com/embed/medias/99w4wh51jr.m3u8"
+  },
+  {
+    "title": "Exploring Stock Market Live APIs",
+    "url": "https://fast.wistia.com/embed/medias/uwbd3x4tl0.m3u8"
+  },
+  {
+    "title": "How does Testing work?",
+    "url": "https://fast.wistia.com/embed/medias/hqky7twj8g.m3u8"
+  },
+  {
+    "title": "Unit Testing with JEST",
+    "url": "https://fast.wistia.com/embed/medias/bz4xdutrf0.m3u8"
+  },
+  {
+    "title": "Deployment on AWS",
+    "url": "https://fast.wistia.com/embed/medias/q400hm473y.m3u8"
+  },
+  {
+    "title": "Covering Fundamentals",
+    "url": "https://fast.wistia.com/embed/medias/8z8ciezhuy.m3u8"
+  },
+  {
+    "title": "What is WebRTC?",
+    "url": "https://fast.wistia.com/embed/medias/70fvc14ua8.m3u8"
+  },
+  {
+    "title": "WebRTC Architectures",
+    "url": "https://fast.wistia.com/embed/medias/1eyf84l2fm.m3u8"
+  },
+  {
+    "title": "Project Demo",
+    "url": "https://fast.wistia.com/embed/medias/kpf708jik0.m3u8"
+  },
+  {
+    "title": "Project Introduction",
+    "url": "https://fast.wistia.com/embed/medias/0mzjitmrgi.m3u8"
+  },
+  {
+    "title": "Project Planning",
+    "url": "https://fast.wistia.com/embed/medias/47kk63wf8s.m3u8"
+  },
+  {
+    "title": "Technologies used",
+    "url": "https://fast.wistia.com/embed/medias/82qwopwd4b.m3u8"
+  },
+  {
+    "title": "Setting up Backend Structure",
+    "url": "https://fast.wistia.com/embed/medias/ch5a8nyzc7.m3u8"
+  },
+  {
+    "title": "Creating DB Models",
+    "url": "https://fast.wistia.com/embed/medias/3y4wxtukqx.m3u8"
+  },
+  {
+    "title": "Authentication Routes",
+    "url": "https://fast.wistia.com/embed/medias/mhzv0dg9a4.m3u8"
+  },
+  {
+    "title": "Socket for Live Interaction",
+    "url": "https://fast.wistia.com/embed/medias/3mmtk8qmg3.m3u8"
+  },
+  {
+    "title": "Merging Socket & Express Server",
+    "url": "https://fast.wistia.com/embed/medias/xhyjinyydz.m3u8"
+  },
+  {
+    "title": "Setting up Frontend Structure",
+    "url": "https://fast.wistia.com/embed/medias/n61fftuwid.m3u8"
+  },
+  {
+    "title": "Setting up the Router",
+    "url": "https://fast.wistia.com/embed/medias/0c7c619424.m3u8"
+  },
+  {
+    "title": "Creating Landing Page",
+    "url": "https://fast.wistia.com/embed/medias/5ocqhlgoyh.m3u8"
+  },
+  {
+    "title": "Creating Authentication Page",
+    "url": "https://fast.wistia.com/embed/medias/aumx7agkbf.m3u8"
+  },
+  {
+    "title": "Context API and Creating Auth Flow",
+    "url": "https://fast.wistia.com/embed/medias/ubd9uq2sp0.m3u8"
+  },
+  {
+    "title": "Activating the STUN Server",
+    "url": "https://fast.wistia.com/embed/medias/sbsgb7zdfz.m3u8"
+  },
+  {
+    "title": "Video and Audio Controls",
+    "url": "https://fast.wistia.com/embed/medias/7fbto4g90i.m3u8"
+  },
+  {
+    "title": "Connection through WebRTC",
+    "url": "https://fast.wistia.com/embed/medias/9vhktwmex2.m3u8"
+  },
+  {
+    "title": "Stream Offers as Video",
+    "url": "https://fast.wistia.com/embed/medias/vm438rhya2.m3u8"
+  },
+  {
+    "title": "Resolving Errors",
+    "url": "https://fast.wistia.com/embed/medias/4pu2faz41s.m3u8"
+  },
+  {
+    "title": "Showing ID for videos",
+    "url": "https://fast.wistia.com/embed/medias/1j5p6fcpa1.m3u8"
+  },
+  {
+    "title": "Improving Meet UI",
+    "url": "https://fast.wistia.com/embed/medias/co0yt6m0p9.m3u8"
+  },
+  {
+    "title": "Screen Share Feature",
+    "url": "https://fast.wistia.com/embed/medias/ctqnxvbfw6.m3u8"
+  },
+  {
+    "title": "Chat window UI",
+    "url": "https://fast.wistia.com/embed/medias/ji3i5jw5i8.m3u8"
+  },
+  {
+    "title": "Real-time messages using Sockets",
+    "url": "https://fast.wistia.com/embed/medias/ri6uqqqq7y.m3u8"
+  },
+  {
+    "title": "HOF for Auth Guard",
+    "url": "https://fast.wistia.com/embed/medias/zra8qi59m5.m3u8"
+  },
+  {
+    "title": "Home Component",
+    "url": "https://fast.wistia.com/embed/medias/vuez6wqxte.m3u8"
+  },
+  {
+    "title": "Implementing History feature",
+    "url": "https://fast.wistia.com/embed/medias/ysszqlgd1j.m3u8"
+  },
+  {
+    "title": "Deployment",
+    "url": "https://fast.wistia.com/embed/medias/h39kruzolq.m3u8"
+  },
+  {
+    "title": "Project Walkthrough",
+    "url": "https://fast.wistia.com/embed/medias/2olyqvxs60.m3u8"
+  },
+  {
+    "title": "Index - Agenda Video",
+    "url": "https://fast.wistia.com/embed/medias/bf23j1az41.m3u8"
+  },
+  {
+    "title": "Planning the Project Structure - Console Commands",
+    "url": "https://fast.wistia.com/embed/medias/okv9zh1h6d.m3u8"
+  },
+  {
+    "title": "Planning the Project Structures - Frontend Components",
+    "url": "https://fast.wistia.com/embed/medias/7i8u42xqxg.m3u8"
+  },
+  {
+    "title": "Planning the Project Structures - Database Schema and Models",
+    "url": "https://fast.wistia.com/embed/medias/rv4o4d6he9.m3u8"
+  },
+  {
+    "title": "Planning the Project Structures - API Endpoints",
+    "url": "https://fast.wistia.com/embed/medias/1ytk2bu54s.m3u8"
+  },
+  {
+    "title": "Creating the folder structure",
+    "url": "https://fast.wistia.com/embed/medias/6jpe3lx94v.m3u8"
+  },
+  {
+    "title": "Reading Terminal Commands from the users",
+    "url": "https://fast.wistia.com/embed/medias/3gqznjorkg.m3u8"
+  },
+  {
+    "title": "Working on the initRepo Logic",
+    "url": "https://fast.wistia.com/embed/medias/v0hyc5i0yn.m3u8"
+  },
+  {
+    "title": "Working on the addFile logic",
+    "url": "https://fast.wistia.com/embed/medias/sj3ev4m24p.m3u8"
+  },
+  {
+    "title": "Working on the commitChanges logic",
+    "url": "https://fast.wistia.com/embed/medias/v5wngty51c.m3u8"
+  },
+  {
+    "title": "Setting up and Configuring AWS",
+    "url": "https://fast.wistia.com/embed/medias/i24bdxegzn.m3u8"
+  },
+  {
+    "title": "Working on the pushChanges Logic",
+    "url": "https://fast.wistia.com/embed/medias/31foia8lkj.m3u8"
+  },
+  {
+    "title": "Working on the pullChanges Logic",
+    "url": "https://fast.wistia.com/embed/medias/uokdbelrjg.m3u8"
+  },
+  {
+    "title": "Working on the revertChanges Logic",
+    "url": "https://fast.wistia.com/embed/medias/6tfn0282dx.m3u8"
+  },
+  {
+    "title": "Creating the Backend folder structure",
+    "url": "https://fast.wistia.com/embed/medias/4xyhkzufue.m3u8"
+  },
+  {
+    "title": "Setting up MongoDB database",
+    "url": "https://fast.wistia.com/embed/medias/hf99hek2ae.m3u8"
+  },
+  {
+    "title": "Writing the Server Creation Logic (Stitched Clip)",
+    "url": "https://fast.wistia.com/embed/medias/r0ntbch0ho.m3u8"
+  },
+  {
+    "title": "Writing the Server Creation Logic",
+    "url": "https://fast.wistia.com/embed/medias/glzcxkczjv.m3u8"
+  },
+  {
+    "title": "Creating Schemas and Models",
+    "url": "https://fast.wistia.com/embed/medias/kh0wspwyfv.m3u8"
+  },
+  {
+    "title": "Setting up User Functionality",
+    "url": "https://fast.wistia.com/embed/medias/5pcirfoq3u.m3u8"
+  },
+  {
+    "title": "Setting up Repository Functionality",
+    "url": "https://fast.wistia.com/embed/medias/sn5e6gulov.m3u8"
+  },
+  {
+    "title": "Setting up Issue Functionality",
+    "url": "https://fast.wistia.com/embed/medias/jrj6b0twyi.m3u8"
+  },
+  {
+    "title": "User Signup",
+    "url": "https://fast.wistia.com/embed/medias/vsxmecf57m.m3u8"
+  },
+  {
+    "title": "User Login",
+    "url": "https://fast.wistia.com/embed/medias/prkgdxrzxn.m3u8"
+  },
+  {
+    "title": "Fetching User Profile",
+    "url": "https://fast.wistia.com/embed/medias/otge6ud0gj.m3u8"
+  },
+  {
+    "title": "Updating and Deleting User Profile",
+    "url": "https://fast.wistia.com/embed/medias/wtuses0a5m.m3u8"
+  },
+  {
+    "title": "Creating a new Repository",
+    "url": "https://fast.wistia.com/embed/medias/niey9pbbnn.m3u8"
+  },
+  {
+    "title": "Fetching Repository details",
+    "url": "https://fast.wistia.com/embed/medias/kvmmg2gv3g.m3u8"
+  },
+  {
+    "title": "Updating and Deleting Repository",
+    "url": "https://fast.wistia.com/embed/medias/4w6v4pez67.m3u8"
+  },
+  {
+    "title": "Working on Issue Controller",
+    "url": "https://fast.wistia.com/embed/medias/e12q9ffgtm.m3u8"
+  },
+  {
+    "title": "Setting up the FrontEnd React App",
+    "url": "https://fast.wistia.com/embed/medias/ugectk5pbi.m3u8"
+  },
+  {
+    "title": "Creating Folder Structure and Auth Context",
+    "url": "https://fast.wistia.com/embed/medias/cfjge59s1q.m3u8"
+  },
+  {
+    "title": "Working on the FrontEnd Router",
+    "url": "https://fast.wistia.com/embed/medias/0vv9cb8wp3.m3u8"
+  },
+  {
+    "title": "Building the Signup Functionality",
+    "url": "https://fast.wistia.com/embed/medias/hx64dbvfz7.m3u8"
+  },
+  {
+    "title": "Building the Login Functionality",
+    "url": "https://fast.wistia.com/embed/medias/1vo6ycl41d.m3u8"
+  },
+  {
+    "title": "Testing Signup and Login Functionality",
+    "url": "https://fast.wistia.com/embed/medias/2xondx0fgc.m3u8"
+  },
+  {
+    "title": "Building the Dashboard - 1",
+    "url": "https://fast.wistia.com/embed/medias/th6dhfdejm.m3u8"
+  },
+  {
+    "title": "Building the Dashboard - 2",
+    "url": "https://fast.wistia.com/embed/medias/ujolow2onz.m3u8"
+  },
+  {
+    "title": "Building the Dashboard - 3",
+    "url": "https://fast.wistia.com/embed/medias/9c2xmil4m4.m3u8"
+  },
+  {
+    "title": "Building the Navbar",
+    "url": "https://fast.wistia.com/embed/medias/72dt6c1rrm.m3u8"
+  },
+  {
+    "title": "Building the User Profile",
+    "url": "https://fast.wistia.com/embed/medias/vfx5kp9fby.m3u8"
+  },
+  {
+    "title": "Building the Contributions HeatMap",
+    "url": "https://fast.wistia.com/embed/medias/qo39dzz7co.m3u8"
+  },
+  {
+    "title": "Building the Logout Functionality",
+    "url": "https://fast.wistia.com/embed/medias/mkhbh63e49.m3u8"
+  },
+  {
+    "title": "Deploying the Frontend",
+    "url": "https://fast.wistia.com/embed/medias/yjtrmenm62.m3u8"
+  },
+  {
+    "title": "Deploying the Backend - 1",
+    "url": "https://fast.wistia.com/embed/medias/fmsq8buw5k.m3u8"
+  },
+  {
+    "title": "Deploying the Backend - 2",
+    "url": "https://fast.wistia.com/embed/medias/d1bzmy6kw8.m3u8"
+  },
+  {
+    "title": "Introduction to Project and Overview",
+    "url": "https://fast.wistia.com/embed/medias/t4kkwlyf04.m3u8"
+  },
+  {
+    "title": "Introduction to NextJS, SSR and SSG",
+    "url": "https://fast.wistia.com/embed/medias/80snjtrhcl.m3u8"
+  },
+  {
+    "title": "Setting up the Project",
+    "url": "https://fast.wistia.com/embed/medias/oa9b3di88e.m3u8"
+  },
+  {
+    "title": "Creating Models for Mongoose",
+    "url": "https://fast.wistia.com/embed/medias/2r6mczde84.m3u8"
+  },
+  {
+    "title": "Registration & Setting up the Routes",
+    "url": "https://fast.wistia.com/embed/medias/bip1ejowkc.m3u8"
+  },
+  {
+    "title": "Testing with HTTP & Login",
+    "url": "https://fast.wistia.com/embed/medias/r9ztvk8nsh.m3u8"
+  },
+  {
+    "title": "Setting up Multer and Updating Profile Picture",
+    "url": "https://fast.wistia.com/embed/medias/i4bfeccate.m3u8"
+  },
+  {
+    "title": "Updating and Getting User Profile",
+    "url": "https://fast.wistia.com/embed/medias/oxitc1c8px.m3u8"
+  },
+  {
+    "title": "Exploring PDF Download option",
+    "url": "https://fast.wistia.com/embed/medias/7ybz5sawt0.m3u8"
+  },
+  {
+    "title": "Implementing the Download Profile Functionality",
+    "url": "https://fast.wistia.com/embed/medias/4o8g0wo2ld.m3u8"
+  },
+  {
+    "title": "Connection Request Functionality",
+    "url": "https://fast.wistia.com/embed/medias/v8um9xpf2j.m3u8"
+  },
+  {
+    "title": "Using Multer to Implement Post Functionality by User",
+    "url": "https://fast.wistia.com/embed/medias/i0dhpm4mbg.m3u8"
+  },
+  {
+    "title": "Delete flag concept and Implementing the Delete functionality",
+    "url": "https://fast.wistia.com/embed/medias/vtaj5lh3ow.m3u8"
+  },
+  {
+    "title": "Implementing CRUD Functionality for Comments",
+    "url": "https://fast.wistia.com/embed/medias/tqk02gogs4.m3u8"
+  },
+  {
+    "title": "Starting with Frontend, Redux, BundlePhobia",
+    "url": "https://fast.wistia.com/embed/medias/5cd55gme27.m3u8"
+  },
+  {
+    "title": "Setting Up Config for API Connection",
+    "url": "https://fast.wistia.com/embed/medias/bo48uly0dc.m3u8"
+  },
+  {
+    "title": "Setting Up Redux and Authentication",
+    "url": "https://fast.wistia.com/embed/medias/ztdt15c3gx.m3u8"
+  },
+  {
+    "title": "Designing the Home / Landing Page",
+    "url": "https://fast.wistia.com/embed/medias/mjj31bfgij.m3u8"
+  },
+  {
+    "title": "Understanding the Styling system in Reactjs",
+    "url": "https://fast.wistia.com/embed/medias/fshu0ybgno.m3u8"
+  },
+  {
+    "title": "Implementing Landing Page UI",
+    "url": "https://fast.wistia.com/embed/medias/jeq8ztdeoe.m3u8"
+  },
+  {
+    "title": "Creating the Authentication Component - UI",
+    "url": "https://fast.wistia.com/embed/medias/y15oovon3p.m3u8"
+  },
+  {
+    "title": "Connecting the Auth with Backend",
+    "url": "https://fast.wistia.com/embed/medias/x9um2jikt8.m3u8"
+  },
+  {
+    "title": "Creating the Dashboard - Posts Reducer",
+    "url": "https://fast.wistia.com/embed/medias/c2ut3901nf.m3u8"
+  },
+  {
+    "title": "Connecting Dashboard Component with Reducer",
+    "url": "https://fast.wistia.com/embed/medias/26xq22nj7x.m3u8"
+  },
+  {
+    "title": "Pure CSS Techniques - Creating Layout for Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/7b28nd14lx.m3u8"
+  },
+  {
+    "title": "Styling UI for Getting All Posts in The Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/pu3hft2z8b.m3u8"
+  },
+  {
+    "title": "Integrating the backend -  Getting and Posting  the posts",
+    "url": "https://fast.wistia.com/embed/medias/x3jjc0zjxk.m3u8"
+  },
+  {
+    "title": "Creating the post feed functionality",
+    "url": "https://fast.wistia.com/embed/medias/5rmq28fs3r.m3u8"
+  },
+  {
+    "title": "Fetching posts from API and Showing it in a Card View",
+    "url": "https://fast.wistia.com/embed/medias/1cn7r03d0y.m3u8"
+  },
+  {
+    "title": "Implementing Post Options - Share Functionality",
+    "url": "https://fast.wistia.com/embed/medias/divvvrga97.m3u8"
+  },
+  {
+    "title": "Implementing Post Options - Share Functionality - 2",
+    "url": "https://fast.wistia.com/embed/medias/wvpwh9ueps.m3u8"
+  },
+  {
+    "title": "Comment Functionality UI",
+    "url": "https://fast.wistia.com/embed/medias/uig35gkt9a.m3u8"
+  },
+  {
+    "title": "Implementing Comment Get and Post Functionality",
+    "url": "https://fast.wistia.com/embed/medias/kgtj9756q2.m3u8"
+  },
+  {
+    "title": "Creating the Discover users functionality",
+    "url": "https://fast.wistia.com/embed/medias/5d9p3pgf6g.m3u8"
+  },
+  {
+    "title": "Navigating to a particular User Profile using SSR",
+    "url": "https://fast.wistia.com/embed/medias/1iunlokuxh.m3u8"
+  },
+  {
+    "title": "Creating the User Profile page",
+    "url": "https://fast.wistia.com/embed/medias/6xctooio3i.m3u8"
+  },
+  {
+    "title": "Creating the User Profile Page - 2",
+    "url": "https://fast.wistia.com/embed/medias/7zunifltyd.m3u8"
+  },
+  {
+    "title": "Creating the Connection Functionality - Sending Connection Request",
+    "url": "https://fast.wistia.com/embed/medias/zotl01i344.m3u8"
+  },
+  {
+    "title": "Implementing User Work History on Profile Page",
+    "url": "https://fast.wistia.com/embed/medias/w6pnfs49sw.m3u8"
+  },
+  {
+    "title": "Creating resume download functionality",
+    "url": "https://fast.wistia.com/embed/medias/96dmwp5myv.m3u8"
+  },
+  {
+    "title": "Seeing My Connection Request and Accepting it",
+    "url": "https://fast.wistia.com/embed/medias/g8xzy0p1zd.m3u8"
+  },
+  {
+    "title": "Creating the Profile page Skeleton",
+    "url": "https://fast.wistia.com/embed/medias/2w1pipsin1.m3u8"
+  },
+  {
+    "title": "Profile Page Update Functionality",
+    "url": "https://fast.wistia.com/embed/medias/aepmc5u6f3.m3u8"
+  },
+  {
+    "title": "Adding the Add work Functionality with Modal",
+    "url": "https://fast.wistia.com/embed/medias/b0dhtpj22l.m3u8"
+  },
+  {
+    "title": "Finishing the App with Responsiveness - Media Queries",
+    "url": "https://fast.wistia.com/embed/medias/mvo2acow91.m3u8"
+  },
+  {
+    "title": "Deploying our LinkedIn Clone",
+    "url": "https://fast.wistia.com/embed/medias/oe86laocdy.m3u8"
+  },
+  {
+    "title": "Project Overview",
+    "url": "https://fast.wistia.com/embed/medias/isca1yt9z7.m3u8"
+  },
+  {
+    "title": "Setup & Explore OpenAI APIs",
+    "url": "https://fast.wistia.com/embed/medias/4p1rvc5czy.m3u8"
+  },
+  {
+    "title": "Using OpenAI with npm",
+    "url": "https://fast.wistia.com/embed/medias/t6taj5akcg.m3u8"
+  },
+  {
+    "title": "Using OpenAI with API endpoints",
+    "url": "https://fast.wistia.com/embed/medias/qgt4z8smuh.m3u8"
+  },
+  {
+    "title": "Creating Models",
+    "url": "https://fast.wistia.com/embed/medias/vhkil4cr3e.m3u8"
+  },
+  {
+    "title": "Setting up Utils",
+    "url": "https://fast.wistia.com/embed/medias/av3y5q2qpr.m3u8"
+  },
+  {
+    "title": "Connecting with Database",
+    "url": "https://fast.wistia.com/embed/medias/lczfufqbcs.m3u8"
+  },
+  {
+    "title": "Setup \"test\" Route",
+    "url": "https://fast.wistia.com/embed/medias/9kv8tbueoh.m3u8"
+  },
+  {
+    "title": "Setup Routes",
+    "url": "https://fast.wistia.com/embed/medias/qs6xd47iie.m3u8"
+  },
+  {
+    "title": "Setup \"chat\" Route",
+    "url": "https://fast.wistia.com/embed/medias/vqkbdg91q9.m3u8"
+  },
+  {
+    "title": "Starting with Frontend: Frontend setup",
+    "url": "https://fast.wistia.com/embed/medias/tk2y4wktdp.m3u8"
+  },
+  {
+    "title": "Building the Sidebar",
+    "url": "https://fast.wistia.com/embed/medias/7ybx5goa98.m3u8"
+  },
+  {
+    "title": "Styling Sidebar",
+    "url": "https://fast.wistia.com/embed/medias/y2genzjx3b.m3u8"
+  },
+  {
+    "title": "Building ChatWindow",
+    "url": "https://fast.wistia.com/embed/medias/ow1q2vvx61.m3u8"
+  },
+  {
+    "title": "Styling ChatWindow",
+    "url": "https://fast.wistia.com/embed/medias/l3zfef340i.m3u8"
+  },
+  {
+    "title": "Functionality: Get Reply for Prompt",
+    "url": "https://fast.wistia.com/embed/medias/lvpmxxnkov.m3u8"
+  },
+  {
+    "title": "Adding Loader",
+    "url": "https://fast.wistia.com/embed/medias/2cep1a3ra4.m3u8"
+  },
+  {
+    "title": "Display Chats",
+    "url": "https://fast.wistia.com/embed/medias/n56tudgh7r.m3u8"
+  },
+  {
+    "title": "Format GPT Reply",
+    "url": "https://fast.wistia.com/embed/medias/qbirat5qe2.m3u8"
+  },
+  {
+    "title": "Add Typing Effect",
+    "url": "https://fast.wistia.com/embed/medias/pwn7x0s3hz.m3u8"
+  },
+  {
+    "title": "Display Thread History",
+    "url": "https://fast.wistia.com/embed/medias/nb8mjqscjf.m3u8"
+  },
+  {
+    "title": "Configure New Chat",
+    "url": "https://fast.wistia.com/embed/medias/70jisotd7z.m3u8"
+  },
+  {
+    "title": "Display chats in Thread",
+    "url": "https://fast.wistia.com/embed/medias/08do6o21jq.m3u8"
+  },
+  {
+    "title": "Delete a Thread",
+    "url": "https://fast.wistia.com/embed/medias/qeycy97axn.m3u8"
+  },
+  {
+    "title": "Implement Dropdown & extra feature ideas",
+    "url": "https://fast.wistia.com/embed/medias/dso2nirg8o.m3u8"
+  },
+  {
+    "title": "Why do we need Docker?",
+    "url": "https://fast.wistia.com/embed/medias/7vpyqdz9dx.m3u8"
+  },
+  {
+    "title": "What is Docker? [Container & Image]",
+    "url": "https://fast.wistia.com/embed/medias/2jk7f421rh.m3u8"
+  },
+  {
+    "title": "Docker Installation (Windows OS)",
+    "url": "https://fast.wistia.com/embed/medias/ci8kfs9umk.m3u8"
+  },
+  {
+    "title": "Docker Installation (Mac OS)",
+    "url": "https://fast.wistia.com/embed/medias/zrlvbzoynf.m3u8"
+  },
+  {
+    "title": "Important Docker Commands",
+    "url": "https://fast.wistia.com/embed/medias/sam73qkgl0.m3u8"
+  },
+  {
+    "title": "Docker vs Virtual Machine",
+    "url": "https://fast.wistia.com/embed/medias/hv3ili22cg.m3u8"
+  },
+  {
+    "title": "Image vs Container",
+    "url": "https://fast.wistia.com/embed/medias/n84rlgoksg.m3u8"
+  },
+  {
+    "title": "More Docker Commands",
+    "url": "https://fast.wistia.com/embed/medias/tqoa46nihz.m3u8"
+  },
+  {
+    "title": "Port Binding",
+    "url": "https://fast.wistia.com/embed/medias/icaugvwo2f.m3u8"
+  },
+  {
+    "title": "Troubleshoot Commands",
+    "url": "https://fast.wistia.com/embed/medias/h51ql4s0vk.m3u8"
+  },
+  {
+    "title": "Use Case: Use Docker with Development",
+    "url": "https://fast.wistia.com/embed/medias/aqr89ba4qm.m3u8"
+  },
+  {
+    "title": "Docker Network",
+    "url": "https://fast.wistia.com/embed/medias/abadx9bwp2.m3u8"
+  },
+  {
+    "title": "Set up mongo & mongo-express",
+    "url": "https://fast.wistia.com/embed/medias/39j7ryydeu.m3u8"
+  },
+  {
+    "title": "Connect DB with Node App",
+    "url": "https://fast.wistia.com/embed/medias/bc8803mm0x.m3u8"
+  },
+  {
+    "title": "Docker Compose",
+    "url": "https://fast.wistia.com/embed/medias/526kgluon7.m3u8"
+  },
+  {
+    "title": "Use Case: Dockerizing our App",
+    "url": "https://fast.wistia.com/embed/medias/p1z0fawqvn.m3u8"
+  },
+  {
+    "title": "Creating Dockerfile",
+    "url": "https://fast.wistia.com/embed/medias/imlk7l45fv.m3u8"
+  },
+  {
+    "title": "Publish Image on DockerHub",
+    "url": "https://fast.wistia.com/embed/medias/6mcugh2no5.m3u8"
+  },
+  {
+    "title": "Docker Volumes",
+    "url": "https://fast.wistia.com/embed/medias/dqfszben55.m3u8"
+  },
+  {
+    "title": "Volumes Commands",
+    "url": "https://fast.wistia.com/embed/medias/59v6ylm5cy.m3u8"
+  },
+  {
+    "title": "Revisiting Docker Network",
+    "url": "https://fast.wistia.com/embed/medias/0bza8iuux5.m3u8"
+  },
+  {
+    "title": "Continuous Integration & Continuous Delivery",
+    "url": "https://fast.wistia.com/embed/medias/8crt8w2gsy.m3u8"
+  },
+  {
+    "title": "CI/CD Pipeline",
+    "url": "https://fast.wistia.com/embed/medias/w4z9tfosq8.m3u8"
+  },
+  {
+    "title": "CI/CD Tools",
+    "url": "https://fast.wistia.com/embed/medias/esisqwfffu.m3u8"
+  },
+  {
+    "title": "Working with Github Actions",
+    "url": "https://fast.wistia.com/embed/medias/pav80274ep.m3u8"
+  },
+  {
+    "title": ".yaml for Automation",
+    "url": "https://fast.wistia.com/embed/medias/2kg1uc2kp1.m3u8"
+  },
+  {
+    "title": "Set up JS project with Jest",
+    "url": "https://fast.wistia.com/embed/medias/airtvqz0nl.m3u8"
+  },
+  {
+    "title": "Our first CI setup",
+    "url": "https://fast.wistia.com/embed/medias/o9qadxn0b9.m3u8"
+  },
+  {
+    "title": "CI/CD for MERN Project",
+    "url": "https://fast.wistia.com/embed/medias/zflmrxx4y1.m3u8"
+  },
+  {
+    "title": "Set up AWS EC2",
+    "url": "https://fast.wistia.com/embed/medias/6pmr00jpa5.m3u8"
+  },
+  {
+    "title": "CI/CD for Backend Module",
+    "url": "https://fast.wistia.com/embed/medias/91wyv3zh0x.m3u8"
+  },
+  {
+    "title": "Automate .env backup",
+    "url": "https://fast.wistia.com/embed/medias/503f3z0dun.m3u8"
+  },
+  {
+    "title": "CI/CD for Frontend Module",
+    "url": "https://fast.wistia.com/embed/medias/tbrd2mf9qj.m3u8"
+  },
+  {
+    "title": "Workflow Summary",
+    "url": "https://fast.wistia.com/embed/medias/rsuknoi6zi.m3u8"
+  }
+]
