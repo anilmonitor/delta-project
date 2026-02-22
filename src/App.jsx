@@ -134,6 +134,17 @@ function Home() {
       <header>
         <h1>Apna College Delta Project</h1>
         <p className="header-subtitle">Download all Delta 8.0 : Complete Web Development!. Projects Video in one click.</p>
+
+        <div style={{ marginTop: '2rem', padding: '1rem', background: 'rgba(239, 68, 68, 0.1)', border: '2px dashed #ef4444', borderRadius: '12px', display: 'inline-block', maxWidth: '800px' }}>
+          <h2 style={{ color: '#ef4444', fontSize: '1.5rem', margin: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+            <span role="img" aria-label="warning" style={{ fontSize: '2rem' }}>⚠️</span>
+            WARNING: DOWNLOAD ALL LECTURES BEFORE THEY EXPIRE!
+            <span role="img" aria-label="warning" style={{ fontSize: '2rem' }}>⚠️</span>
+          </h2>
+          <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '1rem', fontWeight: 500 }}>
+            These video links are temporary and will be removed soon. Please download them to your device immediately to avoid losing access!
+          </p>
+        </div>
       </header>
 
       {videosData.length > 0 && videosData[0].mp4Url && (
