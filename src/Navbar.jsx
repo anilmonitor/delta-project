@@ -76,6 +76,7 @@ export default function Navbar() {
                 >
                     Home
                 </Link>
+                {/* 
                 <Link
                     to="/download-all"
                     style={{
@@ -90,6 +91,7 @@ export default function Navbar() {
                 >
                     Download ZIP
                 </Link>
+                */}
                 <Link
                     to="/about"
                     style={{
