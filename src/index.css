@@ -44,6 +44,7 @@ h1 {
   font-weight: 800;
   background: linear-gradient(to right, #60a5fa, #a78bfa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
 }
@@ -176,14 +177,57 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
   .video-card {
     flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  /* The top info row inside Sigma cards — allow wrapping so btn-row drops below */
+  .video-card .sigma-top-row {
+    display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.75rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Button group — full width, Watch + Download side-by-side */
+  .video-card .sigma-btn-row {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .video-card .sigma-btn-row a,
+  .video-card .sigma-btn-row button,
+  .video-card .sigma-btn-row span {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 0.6rem 0.5rem !important;
+    font-size: 0.82rem !important;
+    min-width: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .download-btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .video-title {
+    font-size: 0.95rem;
   }
 }

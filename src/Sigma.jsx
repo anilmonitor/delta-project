@@ -205,7 +205,7 @@ function SigmaVideoItem({ video, index, previewOnly = false }) {
             }}
         >
             {/* Top row: index + title + buttons */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', width: '100%' }}>
+            <div className="sigma-top-row" style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
                 {/* Left */}
                 <div className="video-info" style={{ flex: 1, minWidth: 0 }}>
                     <div className="video-index">{index + 1}</div>
@@ -233,7 +233,7 @@ function SigmaVideoItem({ video, index, previewOnly = false }) {
                 </div>
 
                 {/* Right: error + buttons */}
-                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end', flexShrink: 0 }}>
+                <div className="sigma-btn-row" style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', justifyContent: 'flex-end', flexShrink: 0 }}>
                     {status === 'error' && (
                         <span style={{
                             color: '#ef4444', fontSize: '0.78rem',
