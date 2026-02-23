@@ -35,10 +35,60 @@ function AdBanner() {
     );
 }
 
+// ─── Progress Bar ─────────────────────────────────────────────────────────────
+function ProgressBar({ pct, downloaded, total, speed }) {
+    const clampedPct = Math.min(100, Math.max(0, pct));
+    const eta = speed > 0 && total > 0
+        ? Math.ceil((total - downloaded) / speed)
+        : null;
+    return (
+        <div style={{ marginTop: '0.7rem', width: '100%' }}>
+            {/* Bar track */}
+            <div style={{
+                width: '100%', height: '8px', borderRadius: '99px',
+                background: 'rgba(99,102,241,0.15)',
+                overflow: 'hidden', position: 'relative',
+            }}>
+                <div style={{
+                    height: '100%',
+                    width: `${clampedPct}%`,
+                    borderRadius: '99px',
+                    background: 'linear-gradient(90deg,#6366f1,#8b5cf6,#06b6d4)',
+                    transition: 'width 0.25s ease',
+                    boxShadow: '0 0 10px rgba(99,102,241,0.6)',
+                }} />
+            </div>
+            {/* Labels */}
+            <div style={{
+                display: 'flex', justifyContent: 'space-between',
+                marginTop: '0.3rem', fontSize: '0.75rem', color: 'var(--text-secondary)',
+            }}>
+                <span>
+                    {formatBytes(downloaded)} / {formatBytes(total)}
+                    {speed > 0 && (
+                        <span style={{ marginLeft: '0.5rem', color: '#818cf8' }}>
+                            @ {formatBytes(speed)}/s
+                        </span>
+                    )}
+                </span>
+                <span style={{ fontWeight: 700, color: '#818cf8', fontSize: '0.82rem' }}>
+                    {clampedPct.toFixed(1)}%
+                    {eta !== null && (
+                        <span style={{ fontWeight: 400, color: 'var(--text-secondary)', marginLeft: '0.4rem' }}>
+                            ~{eta < 60 ? `${eta}s` : `${Math.ceil(eta / 60)}m`} left
+                        </span>
+                    )}
+                </span>
+            </div>
+        </div>
+    );
+}
+
 // ─── Single Video Card ────────────────────────────────────────────────────────
 function SigmaVideoItem({ video, index }) {
     const [status, setStatus] = useState('idle'); // idle | downloading | done | error
     const [errorMsg, setErrorMsg] = useState('');
+    const [progress, setProgress] = useState({ pct: 0, downloaded: 0, total: 0, speed: 0 });
 
     const wistiaId = getWistiaId(video.url);
     const watchUrl = wistiaId ? `https://fast.wistia.com/medias/${wistiaId}` : null;
@@ -47,6 +97,7 @@ function SigmaVideoItem({ video, index }) {
     const handleDownload = async () => {
         setStatus('downloading');
         setErrorMsg('');
+        setProgress({ pct: 0, downloaded: 0, total: 0, speed: 0 });
 
         try {
             let mp4Url = video.mp4Url;
@@ -75,11 +126,44 @@ function SigmaVideoItem({ video, index }) {
                 );
             }
 
-            // Fetch the video as a blob — Wistia delivery URLs support CORS
+            // ── Streamed fetch with progress tracking ──────────────────────
             const resp = await fetch(mp4Url);
             if (!resp.ok) throw new Error(`Server returned ${resp.status}. The link may have expired.`);
 
-            const blob = await resp.blob();
+            const contentLength = Number(resp.headers.get('Content-Length')) || video.size || 0;
+            const reader = resp.body.getReader();
+            const chunks = [];
+            let received = 0;
+            let startTime = Date.now();
+            let lastTime = startTime;
+            let lastReceived = 0;
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                chunks.push(value);
+                received += value.length;
+
+                const now = Date.now();
+                const elapsed = (now - lastTime) / 1000; // seconds since last speed update
+                let speed = 0;
+                if (elapsed >= 0.5) {
+                    speed = (received - lastReceived) / elapsed;
+                    lastTime = now;
+                    lastReceived = received;
+                }
+
+                const pct = contentLength > 0 ? (received / contentLength) * 100 : 0;
+                setProgress(prev => ({
+                    pct,
+                    downloaded: received,
+                    total: contentLength,
+                    speed: elapsed >= 0.5 ? speed : prev.speed,
+                }));
+            }
+
+            // Reassemble and trigger save
+            const blob = new Blob(chunks, { type: 'video/mp4' });
             const blobUrl = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = blobUrl;
@@ -89,12 +173,14 @@ function SigmaVideoItem({ video, index }) {
             document.body.removeChild(a);
             setTimeout(() => URL.revokeObjectURL(blobUrl), 15000);
 
+            setProgress(p => ({ ...p, pct: 100 }));
             setStatus('done');
-            setTimeout(() => setStatus('idle'), 3000);
+            setTimeout(() => { setStatus('idle'); setProgress({ pct: 0, downloaded: 0, total: 0, speed: 0 }); }, 3500);
         } catch (err) {
             console.error('Download error:', err);
             setErrorMsg(err.message);
             setStatus('error');
+            setProgress({ pct: 0, downloaded: 0, total: 0, speed: 0 });
         }
     };
 
@@ -110,104 +196,128 @@ function SigmaVideoItem({ video, index }) {
         : '#64748b';
 
     return (
-        <div className="video-card" style={{ animationDelay: `${(index % 10) * 0.05}s` }}>
-            {/* Left: number + info */}
-            <div className="video-info">
-                <div className="video-index">{index + 1}</div>
-                <div>
-                    <h3 className="video-title">{video.title}</h3>
-                    <div style={{ display: 'flex', gap: '1rem', marginTop: '0.2rem', flexWrap: 'wrap' }}>
-                        {/* Size */}
-                        <span style={{
-                            fontSize: '0.82rem', color: sizeColor,
-                            display: 'flex', alignItems: 'center', gap: '0.3rem',
-                        }}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            {sizeBadge}
-                        </span>
-                        {/* Wistia ID */}
-                        <span style={{ fontSize: '0.78rem', color: '#475569', fontFamily: 'monospace' }}>
-                            {wistiaId || 'N/A'}
-                        </span>
+        <div
+            className="video-card"
+            style={{
+                animationDelay: `${(index % 10) * 0.05}s`,
+                flexDirection: 'column',      /* stack vertically when progress bar shows */
+                alignItems: 'stretch',
+            }}
+        >
+            {/* Top row: index + title + buttons */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', width: '100%' }}>
+                {/* Left */}
+                <div className="video-info" style={{ flex: 1, minWidth: 0 }}>
+                    <div className="video-index">{index + 1}</div>
+                    <div style={{ minWidth: 0 }}>
+                        <h3 className="video-title">{video.title}</h3>
+                        <div style={{ display: 'flex', gap: '1rem', marginTop: '0.2rem', flexWrap: 'wrap' }}>
+                            {/* Size */}
+                            <span style={{
+                                fontSize: '0.82rem', color: sizeColor,
+                                display: 'flex', alignItems: 'center', gap: '0.3rem',
+                            }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                {sizeBadge}
+                            </span>
+                            {/* Wistia ID */}
+                            <span style={{ fontSize: '0.78rem', color: '#475569', fontFamily: 'monospace' }}>
+                                {wistiaId || 'N/A'}
+                            </span>
+                        </div>
                     </div>
+                </div>
+
+                {/* Right: error + buttons */}
+                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end', flexShrink: 0 }}>
+                    {status === 'error' && (
+                        <span style={{
+                            color: '#ef4444', fontSize: '0.78rem',
+                            maxWidth: '200px', textAlign: 'right', whiteSpace: 'pre-line',
+                        }}>
+                            {errorMsg}
+                        </span>
+                    )}
+
+                    {/* Watch Online */}
+                    {watchUrl && (
+                        <a
+                            href={watchUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            style={{
+                                display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+                                padding: '0.55rem 1rem', borderRadius: '8px', fontSize: '0.9rem',
+                                fontWeight: 600, textDecoration: 'none', cursor: 'pointer',
+                                background: 'rgba(99,102,241,0.12)', color: '#818cf8',
+                                border: '1px solid rgba(99,102,241,0.3)',
+                                transition: 'background 0.2s ease',
+                                whiteSpace: 'nowrap',
+                            }}
+                            onMouseEnter={e => e.currentTarget.style.background = 'rgba(99,102,241,0.25)'}
+                            onMouseLeave={e => e.currentTarget.style.background = 'rgba(99,102,241,0.12)'}
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                            Watch
+                        </a>
+                    )}
+
+                    {/* Download */}
+                    <button
+                        className="download-btn"
+                        onClick={handleDownload}
+                        disabled={status === 'downloading'}
+                        style={{
+                            ...(status === 'done'
+                                ? { background: 'linear-gradient(135deg,#10b981,#059669)' }
+                                : !hasMp4 ? { opacity: 0.7 } : {}),
+                            minWidth: '160px',
+                        }}
+                        title={!hasMp4 ? 'MP4 not yet resolved — will try live fetch' : `Download ${sizeBadge}`}
+                    >
+                        {status === 'downloading' ? (
+                            <>
+                                <span className="loader" />
+                                {progress.pct > 0 ? `${progress.pct.toFixed(1)}%` : 'Starting…'}
+                            </>
+                        ) : status === 'done' ? (
+                            <>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Saved!
+                            </>
+                        ) : (
+                            <>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7 10 12 15 17 10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+                                Download {video.size ? `(${formatBytes(video.size)})` : 'MP4'}
+                            </>
+                        )}
+                    </button>
                 </div>
             </div>
 
-            {/* Right: error + buttons */}
-            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
-                {status === 'error' && (
-                    <span style={{
-                        color: '#ef4444', fontSize: '0.78rem',
-                        maxWidth: '200px', textAlign: 'right', whiteSpace: 'pre-line',
-                    }}>
-                        {errorMsg}
-                    </span>
-                )}
-
-                {/* Watch Online */}
-                {watchUrl && (
-                    <a
-                        href={watchUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        style={{
-                            display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
-                            padding: '0.55rem 1rem', borderRadius: '8px', fontSize: '0.9rem',
-                            fontWeight: 600, textDecoration: 'none', cursor: 'pointer',
-                            background: 'rgba(99,102,241,0.12)', color: '#818cf8',
-                            border: '1px solid rgba(99,102,241,0.3)',
-                            transition: 'background 0.2s ease',
-                            whiteSpace: 'nowrap',
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.background = 'rgba(99,102,241,0.25)'}
-                        onMouseLeave={e => e.currentTarget.style.background = 'rgba(99,102,241,0.12)'}
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
-                        Watch
-                    </a>
-                )}
-
-                {/* Download */}
-                <button
-                    className="download-btn"
-                    onClick={handleDownload}
-                    disabled={status === 'downloading'}
-                    style={status === 'done'
-                        ? { background: 'linear-gradient(135deg,#10b981,#059669)' }
-                        : !hasMp4
-                            ? { opacity: 0.7 }
-                            : {}}
-                    title={!hasMp4 ? 'MP4 not yet resolved — will try live fetch' : `Download ${sizeBadge}`}
-                >
-                    {status === 'downloading' ? (
-                        <><span className="loader" />Downloading…</>
-                    ) : status === 'done' ? (
-                        <>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg>
-                            Saved!
-                        </>
-                    ) : (
-                        <>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                <polyline points="7 10 12 15 17 10" />
-                                <line x1="12" y1="15" x2="12" y2="3" />
-                            </svg>
-                            Download {video.size ? `(${formatBytes(video.size)})` : 'MP4'}
-                        </>
-                    )}
-                </button>
-            </div>
+            {/* Progress bar — only visible while downloading */}
+            {status === 'downloading' && (
+                <ProgressBar
+                    pct={progress.pct}
+                    downloaded={progress.downloaded}
+                    total={progress.total || video.size || 0}
+                    speed={progress.speed}
+                />
+            )}
         </div>
     );
 }
