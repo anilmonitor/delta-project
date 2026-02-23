@@ -85,7 +85,7 @@ function ProgressBar({ pct, downloaded, total, speed }) {
 }
 
 // ─── Single Video Card ────────────────────────────────────────────────────────
-function SigmaVideoItem({ video, index }) {
+function SigmaVideoItem({ video, index, previewOnly = false }) {
     const [status, setStatus] = useState('idle'); // idle | downloading | done | error
     const [errorMsg, setErrorMsg] = useState('');
     const [progress, setProgress] = useState({ pct: 0, downloaded: 0, total: 0, speed: 0 });
@@ -268,44 +268,57 @@ function SigmaVideoItem({ video, index }) {
                         </a>
                     )}
 
-                    {/* Download */}
-                    <button
-                        className="download-btn"
-                        onClick={handleDownload}
-                        disabled={status === 'downloading'}
-                        style={{
-                            ...(status === 'done'
-                                ? { background: 'linear-gradient(135deg,#10b981,#059669)' }
-                                : !hasMp4 ? { opacity: 0.7 } : {}),
-                            minWidth: '160px',
-                        }}
-                        title={!hasMp4 ? 'MP4 not yet resolved — will try live fetch' : `Download ${sizeBadge}`}
-                    >
-                        {status === 'downloading' ? (
-                            <>
-                                <span className="loader" />
-                                {progress.pct > 0 ? `${progress.pct.toFixed(1)}%` : 'Starting…'}
-                            </>
-                        ) : status === 'done' ? (
-                            <>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg>
-                                Saved!
-                            </>
-                        ) : (
-                            <>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                    <polyline points="7 10 12 15 17 10" />
-                                    <line x1="12" y1="15" x2="12" y2="3" />
-                                </svg>
-                                Download {video.size ? `(${formatBytes(video.size)})` : 'MP4'}
-                            </>
-                        )}
-                    </button>
+                    {/* Download — hidden for the preview lecture */}
+                    {previewOnly ? (
+                        <span style={{
+                            display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+                            padding: '0.55rem 1rem', borderRadius: '8px', fontSize: '0.85rem',
+                            fontWeight: 600, color: '#f87171',
+                            background: 'rgba(239,68,68,0.1)',
+                            border: '1px solid rgba(239,68,68,0.25)',
+                            whiteSpace: 'nowrap',
+                        }}>
+                            🔒 Preview Only
+                        </span>
+                    ) : (
+                        <button
+                            className="download-btn"
+                            onClick={handleDownload}
+                            disabled={status === 'downloading'}
+                            style={{
+                                ...(status === 'done'
+                                    ? { background: 'linear-gradient(135deg,#10b981,#059669)' }
+                                    : !hasMp4 ? { opacity: 0.7 } : {}),
+                                minWidth: '160px',
+                            }}
+                            title={!hasMp4 ? 'MP4 not yet resolved — will try live fetch' : `Download ${sizeBadge}`}
+                        >
+                            {status === 'downloading' ? (
+                                <>
+                                    <span className="loader" />
+                                    {progress.pct > 0 ? `${progress.pct.toFixed(1)}%` : 'Starting…'}
+                                </>
+                            ) : status === 'done' ? (
+                                <>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                    Saved!
+                                </>
+                            ) : (
+                                <>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="7 10 12 15 17 10" />
+                                        <line x1="12" y1="15" x2="12" y2="3" />
+                                    </svg>
+                                    Download {video.size ? `(${formatBytes(video.size)})` : 'MP4'}
+                                </>
+                            )}
+                        </button>
+                    )}
                 </div>
             </div>
 
@@ -427,7 +440,57 @@ export default function Sigma() {
             <StatsBar total={sigmaVideos.length} shown={filtered.length} />
             <SearchBar query={query} onChange={setQuery} />
 
-            <AdBanner />
+            {/* ── Preview video (lecture 0) ──────────────────────────────── */}
+            {sigmaVideos[0]?.mp4Url && (
+                <div style={{ marginBottom: '2.5rem', marginTop: '-0.5rem' }}>
+                    {/* Label */}
+                    <div style={{
+                        display: 'flex', alignItems: 'center', gap: '0.75rem',
+                        marginBottom: '0.75rem', justifyContent: 'center',
+                    }}>
+                        <span style={{
+                            background: 'linear-gradient(135deg,#6366f1,#8b5cf6)',
+                            color: '#fff', padding: '0.25rem 0.9rem',
+                            borderRadius: '99px', fontSize: '0.78rem', fontWeight: 700,
+                            letterSpacing: '0.05em', textTransform: 'uppercase',
+                        }}>🎬 Preview</span>
+                        <h2 style={{
+                            margin: 0, fontSize: '1.15rem',
+                            color: 'var(--text-primary)', fontWeight: 600,
+                        }}>
+                            {sigmaVideos[0].title}
+                        </h2>
+                        <span style={{
+                            background: 'rgba(239,68,68,0.12)',
+                            color: '#f87171', padding: '0.2rem 0.75rem',
+                            borderRadius: '99px', fontSize: '0.75rem', fontWeight: 600,
+                            border: '1px solid rgba(239,68,68,0.3)',
+                            display: 'flex', alignItems: 'center', gap: '0.3rem',
+                        }}>
+                            🔒 Download disabled
+                        </span>
+                    </div>
+
+                    {/* Player wrapper */}
+                    <div style={{
+                        borderRadius: '14px', overflow: 'hidden',
+                        border: '1px solid var(--border-color)',
+                        boxShadow: '0 12px 40px -8px rgba(99,102,241,0.35)',
+                        maxWidth: '860px', margin: '0 auto',
+                        position: 'relative',
+                    }}>
+                        <video
+                            src={sigmaVideos[0].mp4Url}
+                            controls
+                            controlsList="nodownload"
+                            onContextMenu={e => e.preventDefault()}
+                            style={{ width: '100%', display: 'block', background: '#000' }}
+                            poster=""
+                        />
+                    </div>
+                </div>
+            )}
+
 
             <main className="video-list">
                 {filtered.length === 0 ? (
@@ -438,7 +501,7 @@ export default function Sigma() {
                 ) : (
                     filtered.map((video, i) => (
                         <React.Fragment key={video.url + i}>
-                            <SigmaVideoItem video={video} index={i} />
+                            <SigmaVideoItem video={video} index={i} previewOnly={i === 0} />
                             {(i + 1) % 5 === 0 && (
                                 <div style={{ textAlign: 'center', marginBottom: '1.5rem', marginTop: '-0.5rem' }}>
                                     <a
