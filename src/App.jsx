@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import DownloadAll from './DownloadAll';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
+import Sigma from './Sigma';
 import { formatBytes } from './utils';
 
 // Helper to extract Wistia ID from URL like "https://fast.wistia.com/embed/medias/ocl4ate6f4.m3u8"
@@ -194,6 +195,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sigma" element={<Sigma />} />
         <Route path="/download-all" element={<DownloadAll />} />
         <Route path="/about" element={<AboutUs />} />
       </Routes>

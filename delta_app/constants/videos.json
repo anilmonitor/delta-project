@@ -1,0 +1,1346 @@
+[
+  {
+    "title": "Welcome to DevHub Library!",
+    "url": "https://fast.wistia.com/embed/medias/y9vq324nox.m3u8",
+    "size": 39775440,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/1df443346b56defdca6b3451526d3be655797106.bin"
+  },
+  {
+    "title": "Project Demo",
+    "url": "https://fast.wistia.com/embed/medias/ocl4ate6f4.m3u8",
+    "size": 27836083,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6fb7fdd4be8f0d35943a4f55d5f138a2ef0d44cf.bin"
+  },
+  {
+    "title": "Installing Basic Tools",
+    "url": "https://fast.wistia.com/embed/medias/yl02u9j22k.m3u8",
+    "size": 22932622,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f5c952537811cc6d6c3c0738455e803d29c201df.bin"
+  },
+  {
+    "title": "Project Overview",
+    "url": "https://fast.wistia.com/embed/medias/f43z8bnizp.m3u8",
+    "size": 43099404,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/385b18cfad3d7cc2eb49e09fd744e807c79c7379.bin"
+  },
+  {
+    "title": "Setting up our React Project",
+    "url": "https://fast.wistia.com/embed/medias/086xka6jpa.m3u8",
+    "size": 45080555,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/06f0bcae22a4f0f86a22193bf6d8a30de8a34b20.bin"
+  },
+  {
+    "title": "Default Files & Folders",
+    "url": "https://fast.wistia.com/embed/medias/ng8lyeysno.m3u8",
+    "size": 105513308,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f2882da2d61cfb00ec71046b2b5a59f48b291722.bin"
+  },
+  {
+    "title": "Identifying Major Components",
+    "url": "https://fast.wistia.com/embed/medias/uii0xarv73.m3u8",
+    "size": 96721030,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8abcb005af19cc9c04fa38df4bef8e319eb0c2db.bin"
+  },
+  {
+    "title": "Structuring Landing Page",
+    "url": "https://fast.wistia.com/embed/medias/0r0swr3h8u.m3u8",
+    "size": 82630597,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/3e310fd81532e920be6e5e60c5633ee7a145339c.bin"
+  },
+  {
+    "title": "Home Components (Part 1)",
+    "url": "https://fast.wistia.com/embed/medias/bwzzczq48w.m3u8",
+    "size": 61774020,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/bd87c2fdd3de21c477ef16e37979953079e6078b.bin"
+  },
+  {
+    "title": "Home Components (Part 2)",
+    "url": "https://fast.wistia.com/embed/medias/ftxlk9rh1k.m3u8",
+    "size": 76836703,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/c817ea8ff850c1b49f8c3390b88f7783ac7907c7.bin"
+  },
+  {
+    "title": "Home Components (Part 3)",
+    "url": "https://fast.wistia.com/embed/medias/syhs7ytyar.m3u8",
+    "size": 153236801,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/851751ca6138b6bd271c60d079ba7496c1955bd3.bin"
+  },
+  {
+    "title": "Home Components (Part 4)",
+    "url": "https://fast.wistia.com/embed/medias/ejmzs3xfbr.m3u8",
+    "size": 175708383,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/97a37e853516b82e323e1068f9ac2eac6aa3d050.bin"
+  },
+  {
+    "title": "Navbar, Footer & Open Account",
+    "url": "https://fast.wistia.com/embed/medias/b2w6q15f97.m3u8",
+    "size": 203567632,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/264b633cc5127d716398dde9d464d5609a7d9668.bin"
+  },
+  {
+    "title": "Setting up React Router",
+    "url": "https://fast.wistia.com/embed/medias/pauqgtjyl1.m3u8",
+    "size": 94869416,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d036365111830440caaa4e5fe603e8d6c6e039aa.bin"
+  },
+  {
+    "title": "Implement \"About\" Component",
+    "url": "https://fast.wistia.com/embed/medias/7hzpwnqznl.m3u8",
+    "size": 152637963,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/819ae89608e706d69e8422ffe51ddb7ca2dd12be.bin"
+  },
+  {
+    "title": "LeftSection in \"Product\" Component",
+    "url": "https://fast.wistia.com/embed/medias/6agtc5hy0b.m3u8",
+    "size": 165559529,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f990bcaeca47716f530ee2c90c347faec4854e3f.bin"
+  },
+  {
+    "title": "RightSection in \"Product\" Component",
+    "url": "https://fast.wistia.com/embed/medias/nto0yagebn.m3u8",
+    "size": 105121256,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/851abd33ded336648ef8e3ea29477ec4691c2f45.bin"
+  },
+  {
+    "title": "Implement \"Pricing\" Component",
+    "url": "https://fast.wistia.com/embed/medias/p86ohstwgd.m3u8",
+    "size": 131008888,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a4cdf0d98350ddcf7428b600bded9e1311554d9b.bin"
+  },
+  {
+    "title": "\"Support\" Component (Part 1)",
+    "url": "https://fast.wistia.com/embed/medias/p2el0rrnam.m3u8",
+    "size": 67812571,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/cc64167baceb51d14b724fe4e2426432815a5189.bin"
+  },
+  {
+    "title": "\"Support\" Component (Part 2)",
+    "url": "https://fast.wistia.com/embed/medias/huyhidzq27.m3u8",
+    "size": 171410781,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/16bc0e0ff510d3acb81419b3a1cf03251a8d3837.bin"
+  },
+  {
+    "title": "Exploring the Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/8zzt9gjy7u.m3u8",
+    "size": 73391478,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/35fa2ca9cf296d0bb2ed219fd27a6e4f493b740d.bin"
+  },
+  {
+    "title": "Creating Dashboard Components",
+    "url": "https://fast.wistia.com/embed/medias/9k3efd3yr5.m3u8",
+    "size": 47233036,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/1f336d7cb4ec81de89f512a4dfff9111c9c0271b.bin"
+  },
+  {
+    "title": "Setup Dashboard Menu",
+    "url": "https://fast.wistia.com/embed/medias/jhgpkx1wca.m3u8",
+    "size": 88539801,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e9c9049efb6f2ca62646a499a7e6e003db34169e.bin"
+  },
+  {
+    "title": "Add Data to Holdings & Positions",
+    "url": "https://fast.wistia.com/embed/medias/jf53fi99ll.m3u8",
+    "size": 108267394,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/795b6195299350c01cdde3854f57ad1229cac07a.bin"
+  },
+  {
+    "title": "\"WatchList\" Component (Part 1)",
+    "url": "https://fast.wistia.com/embed/medias/j74fsqnfhj.m3u8",
+    "size": 65162610,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6d912c5a5c782945f62730925f873a6de449cac0.bin"
+  },
+  {
+    "title": "\"WatchList\" Component (Part 2)",
+    "url": "https://fast.wistia.com/embed/medias/t4bokziuej.m3u8",
+    "size": 74758681,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f43ca7bfeda3557fdd1915fe28e0c9abf36f7a52.bin"
+  },
+  {
+    "title": "\"WatchList\" Component (Part 3)",
+    "url": "https://fast.wistia.com/embed/medias/dc642quorc.m3u8",
+    "size": 77275664,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6b25f28350eb709591776a4d31af26e2e21b4561.bin"
+  },
+  {
+    "title": "Setting up MongoDB",
+    "url": "https://fast.wistia.com/embed/medias/0i5k2anyvp.m3u8",
+    "size": 60724049,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5b501b11074b575482e90d27c117d05d92b3d6d6.bin"
+  },
+  {
+    "title": "Connect MongoDB with Express (Part a)",
+    "url": "https://fast.wistia.com/embed/medias/09ei101dsr.m3u8",
+    "size": 54850775,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/2a3fae847b2bfa3f10e29aee7d26d313cd52b667.bin"
+  },
+  {
+    "title": "Connect MongoDB with Express (Part b)",
+    "url": "https://fast.wistia.com/embed/medias/7fsfpewrv0.m3u8",
+    "size": 81750332,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ce9ae9acfb576c1a176d2c92d99b4e06b646f5fe.bin"
+  },
+  {
+    "title": "Creating Schemas & Models",
+    "url": "https://fast.wistia.com/embed/medias/3ur3yldyfh.m3u8",
+    "size": 44781048,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8b42091e31d40f1cf32135d467a1e1c16ff5d5e6.bin"
+  },
+  {
+    "title": "Holdings Starter Data",
+    "url": "https://fast.wistia.com/embed/medias/ofb9fzdtl8.m3u8",
+    "size": 77048267,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5591b380bab1fe6c184b6e5980966cd2ea7eaec9.bin"
+  },
+  {
+    "title": "Testing API Endpoints",
+    "url": "https://fast.wistia.com/embed/medias/767hjhuqdv.m3u8",
+    "size": 51808492,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/332b10bae4cc77d8d4e869ab1a32ddc3edeae8cd.bin"
+  },
+  {
+    "title": "Fetch Data from Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/00yedhc51k.m3u8",
+    "size": 118341036,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5a665bae01a383ad9a39b0d937b72e7b341293d8.bin"
+  },
+  {
+    "title": "CRUD from the dashboard",
+    "url": "https://fast.wistia.com/embed/medias/1mrx1ourla.m3u8",
+    "size": 124209235,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f0b07f0f5c9459c9ea24c97cb0ccdec446f3c003.bin"
+  },
+  {
+    "title": "Implement User Authentication",
+    "url": "https://fast.wistia.com/embed/medias/y6ricgwwhr.m3u8",
+    "size": 44122133,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/bee6de22939da1fac6a1fdc2c660037c5f555aa1.bin"
+  },
+  {
+    "title": "Plotting Graphs with chart.js",
+    "url": "https://fast.wistia.com/embed/medias/99w4wh51jr.m3u8",
+    "size": 103068711,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a08998e3b120cfe1e2a899b231d61a7333acc8c8.bin"
+  },
+  {
+    "title": "Exploring Stock Market Live APIs",
+    "url": "https://fast.wistia.com/embed/medias/uwbd3x4tl0.m3u8",
+    "size": 53373476,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/71ddc2ca7a867e1068f61dc633ff3e09abd29a5e.bin"
+  },
+  {
+    "title": "How does Testing work?",
+    "url": "https://fast.wistia.com/embed/medias/hqky7twj8g.m3u8",
+    "size": 52764015,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e0db20fbad54d51dd5da9617398b205eea0c6abb.bin"
+  },
+  {
+    "title": "Unit Testing with JEST",
+    "url": "https://fast.wistia.com/embed/medias/bz4xdutrf0.m3u8",
+    "size": 91559809,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/835aa6e18ba486b2b50fba204e2620cf116c6315.bin"
+  },
+  {
+    "title": "Deployment on AWS",
+    "url": "https://fast.wistia.com/embed/medias/q400hm473y.m3u8",
+    "size": 74214408,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f99c52bee0ab15b80aec630edb75c761e99c7c1a.bin"
+  },
+  {
+    "title": "Covering Fundamentals",
+    "url": "https://fast.wistia.com/embed/medias/8z8ciezhuy.m3u8",
+    "size": 151762540,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/75dc62f1b5fb91e90f4e5f305c878fb26eab2197.bin"
+  },
+  {
+    "title": "What is WebRTC?",
+    "url": "https://fast.wistia.com/embed/medias/70fvc14ua8.m3u8",
+    "size": 209778887,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/c960e8a545326aeee7a28d748a860d0fb99e210d.bin"
+  },
+  {
+    "title": "WebRTC Architectures",
+    "url": "https://fast.wistia.com/embed/medias/1eyf84l2fm.m3u8",
+    "size": 214719390,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8370bedf41ee1e84aff35d4ed8844a2a29167fbe.bin"
+  },
+  {
+    "title": "Project Demo",
+    "url": "https://fast.wistia.com/embed/medias/kpf708jik0.m3u8",
+    "size": 30087712,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/0b42d77d7b5aa778b3964dffc5ead454b38bd01e.bin"
+  },
+  {
+    "title": "Project Introduction",
+    "url": "https://fast.wistia.com/embed/medias/0mzjitmrgi.m3u8",
+    "size": 7338003,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/4fcaa5afbf391d820a3cf1b2636ac589c5e643f5.bin"
+  },
+  {
+    "title": "Project Planning",
+    "url": "https://fast.wistia.com/embed/medias/47kk63wf8s.m3u8",
+    "size": 57874403,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/fda2f05b5833c29bedbd0a765c05584181134cb5.bin"
+  },
+  {
+    "title": "Technologies used",
+    "url": "https://fast.wistia.com/embed/medias/82qwopwd4b.m3u8",
+    "size": 46907294,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6e928680c5794326a7f51c0136f556d5168b824b.bin"
+  },
+  {
+    "title": "Setting up Backend Structure",
+    "url": "https://fast.wistia.com/embed/medias/ch5a8nyzc7.m3u8",
+    "size": 131637183,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f27e22354d64c7a7b3d2c6e04f4c4b2e43dfb1a3.bin"
+  },
+  {
+    "title": "Creating DB Models",
+    "url": "https://fast.wistia.com/embed/medias/3y4wxtukqx.m3u8",
+    "size": 22915429,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a7fb466212a028a8cd48271a70b8042fbcc9638d.bin"
+  },
+  {
+    "title": "Authentication Routes",
+    "url": "https://fast.wistia.com/embed/medias/mhzv0dg9a4.m3u8",
+    "size": 155138438,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/4f786810c1ddcd1fdb7ce7b72738cdaa46634e28.bin"
+  },
+  {
+    "title": "Socket for Live Interaction",
+    "url": "https://fast.wistia.com/embed/medias/3mmtk8qmg3.m3u8",
+    "size": 169403059,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/322cce13b31d1570602e5698bd3183dbf3142e23.bin"
+  },
+  {
+    "title": "Merging Socket & Express Server",
+    "url": "https://fast.wistia.com/embed/medias/xhyjinyydz.m3u8",
+    "size": 17161143,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8cf3bd8792634b731c8a58084107dad8cef90bbf.bin"
+  },
+  {
+    "title": "Setting up Frontend Structure",
+    "url": "https://fast.wistia.com/embed/medias/n61fftuwid.m3u8",
+    "size": 11939121,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/916e3c8f64143df5e6f1fdbecdd8251141225cc7.bin"
+  },
+  {
+    "title": "Setting up the Router",
+    "url": "https://fast.wistia.com/embed/medias/0c7c619424.m3u8",
+    "size": 55337877,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/1d7f315afa03cc330d53c644fff41d8b207c0bfb.bin"
+  },
+  {
+    "title": "Creating Landing Page",
+    "url": "https://fast.wistia.com/embed/medias/5ocqhlgoyh.m3u8",
+    "size": 165044239,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/4674a110a6403ac7e2dd6b24625ad4893e00e0cd.bin"
+  },
+  {
+    "title": "Creating Authentication Page",
+    "url": "https://fast.wistia.com/embed/medias/aumx7agkbf.m3u8",
+    "size": 139244040,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5c8a298377d0e017145f8db2cea2088c4b53bea9.bin"
+  },
+  {
+    "title": "Context API and Creating Auth Flow",
+    "url": "https://fast.wistia.com/embed/medias/ubd9uq2sp0.m3u8",
+    "size": 207386826,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/2396b1f950e9299da21968376855621cfe22d1a2.bin"
+  },
+  {
+    "title": "Activating the STUN Server",
+    "url": "https://fast.wistia.com/embed/medias/sbsgb7zdfz.m3u8",
+    "size": 123420258,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9086f0281436a475bcdc9f7a964f0bb2534433e7.bin"
+  },
+  {
+    "title": "Video and Audio Controls",
+    "url": "https://fast.wistia.com/embed/medias/7fbto4g90i.m3u8",
+    "size": 135729154,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5b26ef9974665ff3e6bbe41c0383abd89a4741db.bin"
+  },
+  {
+    "title": "Connection through WebRTC",
+    "url": "https://fast.wistia.com/embed/medias/9vhktwmex2.m3u8",
+    "size": 199469994,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/00ce9cc637e0295e982d2d416a9a8e0df0b33e75.bin"
+  },
+  {
+    "title": "Stream Offers as Video",
+    "url": "https://fast.wistia.com/embed/medias/vm438rhya2.m3u8",
+    "size": 226546891,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6228032f5c92e3d728ff44d2cbf1e113a2781efb.bin"
+  },
+  {
+    "title": "Resolving Errors",
+    "url": "https://fast.wistia.com/embed/medias/4pu2faz41s.m3u8",
+    "size": 23980161,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/64975a2b23f32dd4a778dc34b43f25428542dffc.bin"
+  },
+  {
+    "title": "Showing ID for videos",
+    "url": "https://fast.wistia.com/embed/medias/1j5p6fcpa1.m3u8",
+    "size": 91853445,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/3978ab1fc946f5448018ab559d225a2accf4ceae.bin"
+  },
+  {
+    "title": "Improving Meet UI",
+    "url": "https://fast.wistia.com/embed/medias/co0yt6m0p9.m3u8",
+    "size": 241196395,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/39529373d9494a68b8630d062de1a073aa4ae99b.bin"
+  },
+  {
+    "title": "Screen Share Feature",
+    "url": "https://fast.wistia.com/embed/medias/ctqnxvbfw6.m3u8",
+    "size": 99656149,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5684dd05fc1c190b34d0f6193469e3095beac9be.bin"
+  },
+  {
+    "title": "Chat window UI",
+    "url": "https://fast.wistia.com/embed/medias/ji3i5jw5i8.m3u8",
+    "size": 90099272,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/77d16ac3c29d99a2a0a7b2e9e9114d88e0c26d29.bin"
+  },
+  {
+    "title": "Real-time messages using Sockets",
+    "url": "https://fast.wistia.com/embed/medias/ri6uqqqq7y.m3u8",
+    "size": 160032309,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/7e656d17e714b619be9bbeb6a7c6429ce144d07e.bin"
+  },
+  {
+    "title": "HOF for Auth Guard",
+    "url": "https://fast.wistia.com/embed/medias/zra8qi59m5.m3u8",
+    "size": 35698012,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/73bf3c823b92d45fae5cfde43f44d5773518b96e.bin"
+  },
+  {
+    "title": "Home Component",
+    "url": "https://fast.wistia.com/embed/medias/vuez6wqxte.m3u8",
+    "size": 192641613,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/30852ba4235b1bcf94399021852ee6ec40e4f310.bin"
+  },
+  {
+    "title": "Implementing History feature",
+    "url": "https://fast.wistia.com/embed/medias/ysszqlgd1j.m3u8",
+    "size": 180716916,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/50c18b49a2194c00382d4155ab525f1c93cd6ee7.bin"
+  },
+  {
+    "title": "Deployment",
+    "url": "https://fast.wistia.com/embed/medias/h39kruzolq.m3u8",
+    "size": 217124142,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/cbc80958d65483c4772789d91c37a1366b3f9c79.bin"
+  },
+  {
+    "title": "Project Walkthrough",
+    "url": "https://fast.wistia.com/embed/medias/2olyqvxs60.m3u8",
+    "size": 74043185,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9541c4c456a92337b7f914898af7eadfd2b75c77.bin"
+  },
+  {
+    "title": "Index - Agenda Video",
+    "url": "https://fast.wistia.com/embed/medias/bf23j1az41.m3u8",
+    "size": 80975954,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5a95ec0a9197b15bbe0acbc566d584959870ceac.bin"
+  },
+  {
+    "title": "Planning the Project Structure - Console Commands",
+    "url": "https://fast.wistia.com/embed/medias/okv9zh1h6d.m3u8",
+    "size": 62380969,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/91b9c23168a4c22a15d0e23b6331a6996f03f05d.bin"
+  },
+  {
+    "title": "Planning the Project Structures - Frontend Components",
+    "url": "https://fast.wistia.com/embed/medias/7i8u42xqxg.m3u8",
+    "size": 19027798,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d72954b82c2c5f96b3feb634de1b9bc8a18bed73.bin"
+  },
+  {
+    "title": "Planning the Project Structures - Database Schema and Models",
+    "url": "https://fast.wistia.com/embed/medias/rv4o4d6he9.m3u8",
+    "size": 25907543,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8f6452a8e02dfa236d42617219ca2d7ede295fa4.bin"
+  },
+  {
+    "title": "Planning the Project Structures - API Endpoints",
+    "url": "https://fast.wistia.com/embed/medias/1ytk2bu54s.m3u8",
+    "size": 40205584,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/098aebf29bb983fa1c8a881348bfaa2521653da1.bin"
+  },
+  {
+    "title": "Creating the folder structure",
+    "url": "https://fast.wistia.com/embed/medias/6jpe3lx94v.m3u8",
+    "size": 33239092,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/912ea78069ee0a358de93729bccff4030c45598e.bin"
+  },
+  {
+    "title": "Reading Terminal Commands from the users",
+    "url": "https://fast.wistia.com/embed/medias/3gqznjorkg.m3u8",
+    "size": 88918313,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/0e24b813cec9c2483b10b0a5a9b5949f5eb4baeb.bin"
+  },
+  {
+    "title": "Working on the initRepo Logic",
+    "url": "https://fast.wistia.com/embed/medias/v0hyc5i0yn.m3u8",
+    "size": 85296638,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6d384432f920e191282ffd897af794453eb41bed.bin"
+  },
+  {
+    "title": "Working on the addFile logic",
+    "url": "https://fast.wistia.com/embed/medias/sj3ev4m24p.m3u8",
+    "size": 78520853,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9413675eba6e08173450f97acc5756699236ec4a.bin"
+  },
+  {
+    "title": "Working on the commitChanges logic",
+    "url": "https://fast.wistia.com/embed/medias/v5wngty51c.m3u8",
+    "size": 119884258,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/b008735b638f3411c61b4b843bc632034234b459.bin"
+  },
+  {
+    "title": "Setting up and Configuring AWS",
+    "url": "https://fast.wistia.com/embed/medias/i24bdxegzn.m3u8",
+    "size": 91490245,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e4551f9354b02884a3e78c0c8d3ca9689f898989.bin"
+  },
+  {
+    "title": "Working on the pushChanges Logic",
+    "url": "https://fast.wistia.com/embed/medias/31foia8lkj.m3u8",
+    "size": 94128819,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/fae06b638be57309db1dc4502093627a79d19f79.bin"
+  },
+  {
+    "title": "Working on the pullChanges Logic",
+    "url": "https://fast.wistia.com/embed/medias/uokdbelrjg.m3u8",
+    "size": 71456509,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d267764d4de757b610b2751e3cb4f5596ede1f56.bin"
+  },
+  {
+    "title": "Working on the revertChanges Logic",
+    "url": "https://fast.wistia.com/embed/medias/6tfn0282dx.m3u8",
+    "size": 63828385,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/b635e8dc991cc16bdde2c607992de0f99555d312.bin"
+  },
+  {
+    "title": "Creating the Backend folder structure",
+    "url": "https://fast.wistia.com/embed/medias/4xyhkzufue.m3u8",
+    "size": 75436430,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/cadaf965a7b96dd2811bb2028543a17fffcb8e45.bin"
+  },
+  {
+    "title": "Setting up MongoDB database",
+    "url": "https://fast.wistia.com/embed/medias/hf99hek2ae.m3u8",
+    "size": 69222875,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/1f2bb4c9767a2cf158f248b01c50d7f55fbcdce4.bin"
+  },
+  {
+    "title": "Writing the Server Creation Logic (Stitched Clip)",
+    "url": "https://fast.wistia.com/embed/medias/r0ntbch0ho.m3u8",
+    "size": 80975138,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9d22ed8cf09bd02d6891a3901d47af951c1e2fd7.bin"
+  },
+  {
+    "title": "Writing the Server Creation Logic",
+    "url": "https://fast.wistia.com/embed/medias/glzcxkczjv.m3u8",
+    "size": 83867709,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/688535e9c6b6164876ca582b0655f8b82db25d12.bin"
+  },
+  {
+    "title": "Creating Schemas and Models",
+    "url": "https://fast.wistia.com/embed/medias/kh0wspwyfv.m3u8",
+    "size": 100511023,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/bbe11dbc31871b80849ca03a3af25b395138382c.bin"
+  },
+  {
+    "title": "Setting up User Functionality",
+    "url": "https://fast.wistia.com/embed/medias/5pcirfoq3u.m3u8",
+    "size": 100737445,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/945941e9b7c9b932a8eaeb6f7cd8af329a990898.bin"
+  },
+  {
+    "title": "Setting up Repository Functionality",
+    "url": "https://fast.wistia.com/embed/medias/sn5e6gulov.m3u8",
+    "size": 75337357,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/88f7271e05246ddff66629c1c9663fcd1f208790.bin"
+  },
+  {
+    "title": "Setting up Issue Functionality",
+    "url": "https://fast.wistia.com/embed/medias/jrj6b0twyi.m3u8",
+    "size": 49023144,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e725ffb31572a87b338a37984b71f628256889ee.bin"
+  },
+  {
+    "title": "User Signup",
+    "url": "https://fast.wistia.com/embed/medias/vsxmecf57m.m3u8",
+    "size": 142657955,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ed77e0df629ff03a95f7112994a986a610b8ccc3.bin"
+  },
+  {
+    "title": "User Login",
+    "url": "https://fast.wistia.com/embed/medias/prkgdxrzxn.m3u8",
+    "size": 57747565,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/372ea8acde69a476bbfaded4a6aecdd388841bcf.bin"
+  },
+  {
+    "title": "Fetching User Profile",
+    "url": "https://fast.wistia.com/embed/medias/otge6ud0gj.m3u8",
+    "size": 101752260,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8040282acc3809a597c0eed8784e53da336cb243.bin"
+  },
+  {
+    "title": "Updating and Deleting User Profile",
+    "url": "https://fast.wistia.com/embed/medias/wtuses0a5m.m3u8",
+    "size": 94089930,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/c5d234b717ba755a801f96d3da876e447d60ec03.bin"
+  },
+  {
+    "title": "Creating a new Repository",
+    "url": "https://fast.wistia.com/embed/medias/niey9pbbnn.m3u8",
+    "size": 120832700,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ac947c642ea9b6aa98209e22c5694c1a3117fb90.bin"
+  },
+  {
+    "title": "Fetching Repository details",
+    "url": "https://fast.wistia.com/embed/medias/kvmmg2gv3g.m3u8",
+    "size": 115934602,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/66f0cc7649668bcacb78988cabca528e107b84dd.bin"
+  },
+  {
+    "title": "Updating and Deleting Repository",
+    "url": "https://fast.wistia.com/embed/medias/4w6v4pez67.m3u8",
+    "size": 93007643,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9960b96ddd0e02d6e8436af9fb8a5c75e039d500.bin"
+  },
+  {
+    "title": "Working on Issue Controller",
+    "url": "https://fast.wistia.com/embed/medias/e12q9ffgtm.m3u8",
+    "size": 83511922,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/53b87e1e37f0dbfb8e67427948fe5a19ee25ceb9.bin"
+  },
+  {
+    "title": "Setting up the FrontEnd React App",
+    "url": "https://fast.wistia.com/embed/medias/ugectk5pbi.m3u8",
+    "size": 58580138,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/72bd84190b2ed701bd2f07877ed16d3b2d6ba4fa.bin"
+  },
+  {
+    "title": "Creating Folder Structure and Auth Context",
+    "url": "https://fast.wistia.com/embed/medias/cfjge59s1q.m3u8",
+    "size": 74652899,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/4a2589a614e898d61ca6f5dc1085c47de069926d.bin"
+  },
+  {
+    "title": "Working on the FrontEnd Router",
+    "url": "https://fast.wistia.com/embed/medias/0vv9cb8wp3.m3u8",
+    "size": 93094009,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f6aaf73816cbf7400b1b7235c10cb59cfd7a75c9.bin"
+  },
+  {
+    "title": "Building the Signup Functionality",
+    "url": "https://fast.wistia.com/embed/medias/hx64dbvfz7.m3u8",
+    "size": 115790307,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/643fb7b291b33f99968e9b76020d64ef17a55daf.bin"
+  },
+  {
+    "title": "Building the Login Functionality",
+    "url": "https://fast.wistia.com/embed/medias/1vo6ycl41d.m3u8",
+    "size": 59773552,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/0822df7382c1ed681375412093f9e1a8170f984c.bin"
+  },
+  {
+    "title": "Testing Signup and Login Functionality",
+    "url": "https://fast.wistia.com/embed/medias/2xondx0fgc.m3u8",
+    "size": 78768836,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f56d705a530ffc2e058d69ed169e236042221490.bin"
+  },
+  {
+    "title": "Building the Dashboard - 1",
+    "url": "https://fast.wistia.com/embed/medias/th6dhfdejm.m3u8",
+    "size": 112663317,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e29392f406a468278fb8f7d1d44fca466bcaa44e.bin"
+  },
+  {
+    "title": "Building the Dashboard - 2",
+    "url": "https://fast.wistia.com/embed/medias/ujolow2onz.m3u8",
+    "size": 87127394,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/434e927f2c4e7a16178a3ca846a2c78e8641dedb.bin"
+  },
+  {
+    "title": "Building the Dashboard - 3",
+    "url": "https://fast.wistia.com/embed/medias/9c2xmil4m4.m3u8",
+    "size": 38976992,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/fe1cf0bb594ada2d578f658ff05ee347c4c2d712.bin"
+  },
+  {
+    "title": "Building the Navbar",
+    "url": "https://fast.wistia.com/embed/medias/72dt6c1rrm.m3u8",
+    "size": 82911885,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/4231653ab1ba30916dec598b8fb8d042bdd35d95.bin"
+  },
+  {
+    "title": "Building the User Profile",
+    "url": "https://fast.wistia.com/embed/medias/vfx5kp9fby.m3u8",
+    "size": 73234076,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e274879c3a4a20066535263aadfaf240a232a6bc.bin"
+  },
+  {
+    "title": "Building the Contributions HeatMap",
+    "url": "https://fast.wistia.com/embed/medias/qo39dzz7co.m3u8",
+    "size": 161337069,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ffcbc4245a7414f751391ef9e8b87a419a6a56cf.bin"
+  },
+  {
+    "title": "Building the Logout Functionality",
+    "url": "https://fast.wistia.com/embed/medias/mkhbh63e49.m3u8",
+    "size": 69806959,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d132b1353ca2090c24e63ece9e32bf1fad9bc00e.bin"
+  },
+  {
+    "title": "Deploying the Frontend",
+    "url": "https://fast.wistia.com/embed/medias/yjtrmenm62.m3u8",
+    "size": 52336829,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a16d4f303841472a0ffecedb384813e9a7248022.bin"
+  },
+  {
+    "title": "Deploying the Backend - 1",
+    "url": "https://fast.wistia.com/embed/medias/fmsq8buw5k.m3u8",
+    "size": 71652065,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/cc842f0e07da4933afdceffdd5e67f0ab6ea1774.bin"
+  },
+  {
+    "title": "Deploying the Backend - 2",
+    "url": "https://fast.wistia.com/embed/medias/d1bzmy6kw8.m3u8",
+    "size": 89235778,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/adaeb246c9fc0b0ac8d5cd579a15a9c9eaf0b824.bin"
+  },
+  {
+    "title": "Introduction to Project and Overview",
+    "url": "https://fast.wistia.com/embed/medias/t4kkwlyf04.m3u8",
+    "size": 20424957,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ab46c87762b97927a8bd45e4651a60fb6d97b91e.bin"
+  },
+  {
+    "title": "Introduction to NextJS, SSR and SSG",
+    "url": "https://fast.wistia.com/embed/medias/80snjtrhcl.m3u8",
+    "size": 49833024,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5445ed5d49b305efad42c35471bdf5b1e8e270b0.bin"
+  },
+  {
+    "title": "Setting up the Project",
+    "url": "https://fast.wistia.com/embed/medias/oa9b3di88e.m3u8",
+    "size": 36654593,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/035f534b1ecea142aacc8ca61ec4b797f0336deb.bin"
+  },
+  {
+    "title": "Creating Models for Mongoose",
+    "url": "https://fast.wistia.com/embed/medias/2r6mczde84.m3u8",
+    "size": 151454383,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/47ba44c52bf34b008d87ed09897ad65a57e26c65.bin"
+  },
+  {
+    "title": "Registration & Setting up the Routes",
+    "url": "https://fast.wistia.com/embed/medias/bip1ejowkc.m3u8",
+    "size": 42856950,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d4c54376ad74df7dadd2ec952c434e5e578dbaf7.bin"
+  },
+  {
+    "title": "Testing with HTTP & Login",
+    "url": "https://fast.wistia.com/embed/medias/r9ztvk8nsh.m3u8",
+    "size": 59787860,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/dc93a6afa0f8feb34d69e597e19c811da55197aa.bin"
+  },
+  {
+    "title": "Setting up Multer and Updating Profile Picture",
+    "url": "https://fast.wistia.com/embed/medias/i4bfeccate.m3u8",
+    "size": 67856148,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/baf7a8b9f806d299fd24b044502c32b04bb45b85.bin"
+  },
+  {
+    "title": "Updating and Getting User Profile",
+    "url": "https://fast.wistia.com/embed/medias/oxitc1c8px.m3u8",
+    "size": 81729990,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/92779fbabc5d5f0e7398738016f742efbadc820b.bin"
+  },
+  {
+    "title": "Exploring PDF Download option",
+    "url": "https://fast.wistia.com/embed/medias/7ybz5sawt0.m3u8",
+    "size": 122783494,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/02c1a7c675fcedc3b517c35662c99e5c6fdf096b.bin"
+  },
+  {
+    "title": "Implementing the Download Profile Functionality",
+    "url": "https://fast.wistia.com/embed/medias/4o8g0wo2ld.m3u8",
+    "size": 75217016,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9ead9f0b3fa56a37dbe3e5c8b7b9409201a863dd.bin"
+  },
+  {
+    "title": "Connection Request Functionality",
+    "url": "https://fast.wistia.com/embed/medias/v8um9xpf2j.m3u8",
+    "size": 92311261,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a65ca7c783f8606a4461d59178e7d6b160210fca.bin"
+  },
+  {
+    "title": "Using Multer to Implement Post Functionality by User",
+    "url": "https://fast.wistia.com/embed/medias/i0dhpm4mbg.m3u8",
+    "size": 57100169,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/cb564b87aeb868d59188709207545d9d8c0d7210.bin"
+  },
+  {
+    "title": "Delete flag concept and Implementing the Delete functionality",
+    "url": "https://fast.wistia.com/embed/medias/vtaj5lh3ow.m3u8",
+    "size": 70849802,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/bbc7016bbfa764d7fe6d2c626d2787b894a0e6c8.bin"
+  },
+  {
+    "title": "Implementing CRUD Functionality for Comments",
+    "url": "https://fast.wistia.com/embed/medias/tqk02gogs4.m3u8",
+    "size": 91041959,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a62f85254725d8c658b47442765903f9beae7d00.bin"
+  },
+  {
+    "title": "Starting with Frontend, Redux, BundlePhobia",
+    "url": "https://fast.wistia.com/embed/medias/5cd55gme27.m3u8",
+    "size": 39814845,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8767d5d8ea6ffc218fd4b17a188e279196848ec9.bin"
+  },
+  {
+    "title": "Setting Up Config for API Connection",
+    "url": "https://fast.wistia.com/embed/medias/bo48uly0dc.m3u8",
+    "size": 31954683,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/4b38c83a88c2affd58e1bbf36bd0c9be79476132.bin"
+  },
+  {
+    "title": "Setting Up Redux and Authentication",
+    "url": "https://fast.wistia.com/embed/medias/ztdt15c3gx.m3u8",
+    "size": 195896405,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5c8f544b3c7c8519e79b06513f88d4b30daa4907.bin"
+  },
+  {
+    "title": "Designing the Home / Landing Page",
+    "url": "https://fast.wistia.com/embed/medias/mjj31bfgij.m3u8",
+    "size": 39992329,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e5430e2cc22560ba0585e521a22c32450a917dbb.bin"
+  },
+  {
+    "title": "Understanding the Styling system in Reactjs",
+    "url": "https://fast.wistia.com/embed/medias/fshu0ybgno.m3u8",
+    "size": 25162239,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/32e388f0b014b777267716cc6ef8008feccf7d97.bin"
+  },
+  {
+    "title": "Implementing Landing Page UI",
+    "url": "https://fast.wistia.com/embed/medias/jeq8ztdeoe.m3u8",
+    "size": 158403667,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/7dba3b7031d6bf01341cdd30e44fda819d96b944.bin"
+  },
+  {
+    "title": "Creating the Authentication Component - UI",
+    "url": "https://fast.wistia.com/embed/medias/y15oovon3p.m3u8",
+    "size": 145087774,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5c52ab8a28b3b5abd4084948580bdcb476b6bb61.bin"
+  },
+  {
+    "title": "Connecting the Auth with Backend",
+    "url": "https://fast.wistia.com/embed/medias/x9um2jikt8.m3u8",
+    "size": 174894260,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8928c1877aeb64c3b65d10f34ab08ed1ff12f505.bin"
+  },
+  {
+    "title": "Creating the Dashboard - Posts Reducer",
+    "url": "https://fast.wistia.com/embed/medias/c2ut3901nf.m3u8",
+    "size": 120824571,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6386c300e98c67a47ca579068fec0234bf8babd6.bin"
+  },
+  {
+    "title": "Connecting Dashboard Component with Reducer",
+    "url": "https://fast.wistia.com/embed/medias/26xq22nj7x.m3u8",
+    "size": 124781346,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a50430ab3cbbd1a86b78e11dc98e5ff76dab816e.bin"
+  },
+  {
+    "title": "Pure CSS Techniques - Creating Layout for Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/7b28nd14lx.m3u8",
+    "size": 153120437,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/26735925450c826a330d8de2050fe94667056802.bin"
+  },
+  {
+    "title": "Styling UI for Getting All Posts in The Dashboard",
+    "url": "https://fast.wistia.com/embed/medias/pu3hft2z8b.m3u8",
+    "size": 200263856,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d9a9737dfe237f6610ff0a902e679e308b9d51a5.bin"
+  },
+  {
+    "title": "Integrating the backend -  Getting and Posting  the posts",
+    "url": "https://fast.wistia.com/embed/medias/x3jjc0zjxk.m3u8",
+    "size": 174157897,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/bba3b55e0e10169763854edd137edc83b09f6edc.bin"
+  },
+  {
+    "title": "Creating the post feed functionality",
+    "url": "https://fast.wistia.com/embed/medias/5rmq28fs3r.m3u8",
+    "size": 93838790,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e5bda53b9b52989d8b089236a78acc5786fb7318.bin"
+  },
+  {
+    "title": "Fetching posts from API and Showing it in a Card View",
+    "url": "https://fast.wistia.com/embed/medias/1cn7r03d0y.m3u8",
+    "size": 169649032,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/1545973db0ec79b077f191701cf5b53492d89a9c.bin"
+  },
+  {
+    "title": "Implementing Post Options - Share Functionality",
+    "url": "https://fast.wistia.com/embed/medias/divvvrga97.m3u8",
+    "size": 68202368,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/1ae4817bcbd653106b0d372ec6f5ca7e20620256.bin"
+  },
+  {
+    "title": "Implementing Post Options - Share Functionality - 2",
+    "url": "https://fast.wistia.com/embed/medias/wvpwh9ueps.m3u8",
+    "size": 17076789,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/459fe50ead3b6c25ac93253b31d0cfa9b801b077.bin"
+  },
+  {
+    "title": "Comment Functionality UI",
+    "url": "https://fast.wistia.com/embed/medias/uig35gkt9a.m3u8",
+    "size": 107687443,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/dbf793ebb371cbcfee5fbc641eb5c65ac464f9fa.bin"
+  },
+  {
+    "title": "Implementing Comment Get and Post Functionality",
+    "url": "https://fast.wistia.com/embed/medias/kgtj9756q2.m3u8",
+    "size": 166507922,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ed8c56b752bc986c55fda24b97a8d588547a2217.bin"
+  },
+  {
+    "title": "Creating the Discover users functionality",
+    "url": "https://fast.wistia.com/embed/medias/5d9p3pgf6g.m3u8",
+    "size": 56153317,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/616fcc1975c061008d192c0ee3d04185e1498382.bin"
+  },
+  {
+    "title": "Navigating to a particular User Profile using SSR",
+    "url": "https://fast.wistia.com/embed/medias/1iunlokuxh.m3u8",
+    "size": 100980829,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/fa81c3b1f52b34855d474bcdebcd04accc7194b8.bin"
+  },
+  {
+    "title": "Creating the User Profile page",
+    "url": "https://fast.wistia.com/embed/medias/6xctooio3i.m3u8",
+    "size": 92019598,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ba1b5e85b14d20100ef842387ad974f9b92a71d1.bin"
+  },
+  {
+    "title": "Creating the User Profile Page - 2",
+    "url": "https://fast.wistia.com/embed/medias/7zunifltyd.m3u8",
+    "size": 60255587,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a1187792128d7076a7886c932ad470183db21e8a.bin"
+  },
+  {
+    "title": "Creating the Connection Functionality - Sending Connection Request",
+    "url": "https://fast.wistia.com/embed/medias/zotl01i344.m3u8",
+    "size": 117164214,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/0cd3fa097418973b6c813d73dc3d487f7b6bc25b.bin"
+  },
+  {
+    "title": "Implementing User Work History on Profile Page",
+    "url": "https://fast.wistia.com/embed/medias/w6pnfs49sw.m3u8",
+    "size": 21979149,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/645aa6465853687146893d090b4229bc3c38df1a.bin"
+  },
+  {
+    "title": "Creating resume download functionality",
+    "url": "https://fast.wistia.com/embed/medias/96dmwp5myv.m3u8",
+    "size": 67997810,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/542d2ad89c8a7a58b7c2d65f821cfc73bc63bc33.bin"
+  },
+  {
+    "title": "Seeing My Connection Request and Accepting it",
+    "url": "https://fast.wistia.com/embed/medias/g8xzy0p1zd.m3u8",
+    "size": 215267955,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/eca48acc654e1566eac7f4f9579667016ce43b5b.bin"
+  },
+  {
+    "title": "Creating the Profile page Skeleton",
+    "url": "https://fast.wistia.com/embed/medias/2w1pipsin1.m3u8",
+    "size": 198684118,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d7eabc3bc1c5276c03aebd0821f416e625eb648b.bin"
+  },
+  {
+    "title": "Profile Page Update Functionality",
+    "url": "https://fast.wistia.com/embed/medias/aepmc5u6f3.m3u8",
+    "size": 147654531,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/29ba851eaaaba1788676a9bbb4aac52be5395659.bin"
+  },
+  {
+    "title": "Adding the Add work Functionality with Modal",
+    "url": "https://fast.wistia.com/embed/medias/b0dhtpj22l.m3u8",
+    "size": 104579156,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/69d0104c80e267f3f757ef7a129fb19bcea5e3df.bin"
+  },
+  {
+    "title": "Finishing the App with Responsiveness - Media Queries",
+    "url": "https://fast.wistia.com/embed/medias/mvo2acow91.m3u8",
+    "size": 192587718,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/84da610b79437911f4e1e83df89c38d81475e420.bin"
+  },
+  {
+    "title": "Deploying our LinkedIn Clone",
+    "url": "https://fast.wistia.com/embed/medias/oe86laocdy.m3u8",
+    "size": 110741509,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/fd83e79bd60bdc8d940557eb88c2d18292054677.bin"
+  },
+  {
+    "title": "Project Overview",
+    "url": "https://fast.wistia.com/embed/medias/isca1yt9z7.m3u8",
+    "size": 53511153,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/65468198382437280a066c2778a9ec5bfc1f52e5.bin"
+  },
+  {
+    "title": "Setup & Explore OpenAI APIs",
+    "url": "https://fast.wistia.com/embed/medias/4p1rvc5czy.m3u8",
+    "size": 40823814,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/0ce7263ae84ebf4bdb1c7bcc11c1d68e85b9cfd7.bin"
+  },
+  {
+    "title": "Using OpenAI with npm",
+    "url": "https://fast.wistia.com/embed/medias/t6taj5akcg.m3u8",
+    "size": 46121864,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/b857c56fae50004ed8da00f6a918082c7e73b01e.bin"
+  },
+  {
+    "title": "Using OpenAI with API endpoints",
+    "url": "https://fast.wistia.com/embed/medias/qgt4z8smuh.m3u8",
+    "size": 107412177,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a5b213586d28427ba5734be8838301d48f72c7a1.bin"
+  },
+  {
+    "title": "Creating Models",
+    "url": "https://fast.wistia.com/embed/medias/vhkil4cr3e.m3u8",
+    "size": 105092154,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d150df99cb8e2181133c4fa8799e38f8dad18af8.bin"
+  },
+  {
+    "title": "Setting up Utils",
+    "url": "https://fast.wistia.com/embed/medias/av3y5q2qpr.m3u8",
+    "size": 21445542,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8b07958662be969a3834004e5ad59245ea45ffca.bin"
+  },
+  {
+    "title": "Connecting with Database",
+    "url": "https://fast.wistia.com/embed/medias/lczfufqbcs.m3u8",
+    "size": 49294802,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/0005fd6b0c40f1afbdb9ba1c5663b331110751ed.bin"
+  },
+  {
+    "title": "Setup \"test\" Route",
+    "url": "https://fast.wistia.com/embed/medias/9kv8tbueoh.m3u8",
+    "size": 37100681,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/afc489fdca1c23236b1114628965f15ece87f465.bin"
+  },
+  {
+    "title": "Setup Routes",
+    "url": "https://fast.wistia.com/embed/medias/qs6xd47iie.m3u8",
+    "size": 88917666,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/11ff37d9c1a9b4ff7af3edfdf68aec874c895725.bin"
+  },
+  {
+    "title": "Setup \"chat\" Route",
+    "url": "https://fast.wistia.com/embed/medias/vqkbdg91q9.m3u8",
+    "size": 168315208,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/41d9bdf31a8d1bd9f00a613211594f26617df0d1.bin"
+  },
+  {
+    "title": "Starting with Frontend: Frontend setup",
+    "url": "https://fast.wistia.com/embed/medias/tk2y4wktdp.m3u8",
+    "size": 84237383,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9129e23f0ed743403b95b5e193e8729ea4711f20.bin"
+  },
+  {
+    "title": "Building the Sidebar",
+    "url": "https://fast.wistia.com/embed/medias/7ybx5goa98.m3u8",
+    "size": 29114812,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f3ef8a75e7d1fcdea16769591a8fa02ef785cbbc.bin"
+  },
+  {
+    "title": "Styling Sidebar",
+    "url": "https://fast.wistia.com/embed/medias/y2genzjx3b.m3u8",
+    "size": 80992836,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/ca85976ba105587b5c489a9eee00c22addc81f0c.bin"
+  },
+  {
+    "title": "Building ChatWindow",
+    "url": "https://fast.wistia.com/embed/medias/ow1q2vvx61.m3u8",
+    "size": 34224044,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/4914ecedcd959eb3af8e287d0c3a013185c2d277.bin"
+  },
+  {
+    "title": "Styling ChatWindow",
+    "url": "https://fast.wistia.com/embed/medias/l3zfef340i.m3u8",
+    "size": 81065041,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/f04b2925f2ddc0474b3e76153bb1651ac31a07f9.bin"
+  },
+  {
+    "title": "Functionality: Get Reply for Prompt",
+    "url": "https://fast.wistia.com/embed/medias/lvpmxxnkov.m3u8",
+    "size": 96740724,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a5db02e75d81f3864be9082d5899b0999d22a450.bin"
+  },
+  {
+    "title": "Adding Loader",
+    "url": "https://fast.wistia.com/embed/medias/2cep1a3ra4.m3u8",
+    "size": 26748976,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/110793ce6433f95a5038b5ce1e6632fd1db5333f.bin"
+  },
+  {
+    "title": "Display Chats",
+    "url": "https://fast.wistia.com/embed/medias/n56tudgh7r.m3u8",
+    "size": 132666006,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a927cac129de50c946677b767653502e3487d087.bin"
+  },
+  {
+    "title": "Format GPT Reply",
+    "url": "https://fast.wistia.com/embed/medias/qbirat5qe2.m3u8",
+    "size": 63707103,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d381c4fbb461086014b32f188239e11f33b13699.bin"
+  },
+  {
+    "title": "Add Typing Effect",
+    "url": "https://fast.wistia.com/embed/medias/pwn7x0s3hz.m3u8",
+    "size": 86734259,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/2ecf7b633416e949b13ec60ae9ced650f9149786.bin"
+  },
+  {
+    "title": "Display Thread History",
+    "url": "https://fast.wistia.com/embed/medias/nb8mjqscjf.m3u8",
+    "size": 77800705,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/3336f6f8cb16c7e35126958f2cb37ce720e2b972.bin"
+  },
+  {
+    "title": "Configure New Chat",
+    "url": "https://fast.wistia.com/embed/medias/70jisotd7z.m3u8",
+    "size": 32117073,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/c1c72f56ce3f1ecfe084727de76d61d301cb28b9.bin"
+  },
+  {
+    "title": "Display chats in Thread",
+    "url": "https://fast.wistia.com/embed/medias/08do6o21jq.m3u8",
+    "size": 103347333,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/18694716de2e1aa7e7b0666855623a6853c159e6.bin"
+  },
+  {
+    "title": "Delete a Thread",
+    "url": "https://fast.wistia.com/embed/medias/qeycy97axn.m3u8",
+    "size": 66577468,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/fa1547daa2a305ba275047baba5eab6e9143848b.bin"
+  },
+  {
+    "title": "Implement Dropdown & extra feature ideas",
+    "url": "https://fast.wistia.com/embed/medias/dso2nirg8o.m3u8",
+    "size": 120206968,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/9a3735f8602559410fa12cd3500ee5543efc35cd.bin"
+  },
+  {
+    "title": "Why do we need Docker?",
+    "url": "https://fast.wistia.com/embed/medias/7vpyqdz9dx.m3u8",
+    "size": 61963194,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/75b1d884d7bebc5c524db0a7941e3eac4943a746.bin"
+  },
+  {
+    "title": "What is Docker? [Container & Image]",
+    "url": "https://fast.wistia.com/embed/medias/2jk7f421rh.m3u8",
+    "size": 84517138,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/1bb8f2bb6fb9f0d18f0ab69e31c24f57bd85df1e.bin"
+  },
+  {
+    "title": "Docker Installation (Windows OS)",
+    "url": "https://fast.wistia.com/embed/medias/ci8kfs9umk.m3u8",
+    "size": 14823175,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8f3ea267d00a368dd64e1547eebb54d90c4fe8ec.bin"
+  },
+  {
+    "title": "Docker Installation (Mac OS)",
+    "url": "https://fast.wistia.com/embed/medias/zrlvbzoynf.m3u8",
+    "size": 9479537,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/588742e831c0948354a5ded3a96d31dca962cb5c.bin"
+  },
+  {
+    "title": "Important Docker Commands",
+    "url": "https://fast.wistia.com/embed/medias/sam73qkgl0.m3u8",
+    "size": 84046558,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/866ab193d5af785ed6db0640a09d2a2e4d9ed189.bin"
+  },
+  {
+    "title": "Docker vs Virtual Machine",
+    "url": "https://fast.wistia.com/embed/medias/hv3ili22cg.m3u8",
+    "size": 47760014,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/eb80420abcb9745edd4f1284786cd71b4298b679.bin"
+  },
+  {
+    "title": "Image vs Container",
+    "url": "https://fast.wistia.com/embed/medias/n84rlgoksg.m3u8",
+    "size": 28054329,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e018e86116ad7a3f062a788e69e0d2ec22a5bdbd.bin"
+  },
+  {
+    "title": "More Docker Commands",
+    "url": "https://fast.wistia.com/embed/medias/tqoa46nihz.m3u8",
+    "size": 55922261,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a6c942e3b32a1b2cba675a73c2d846774483cd03.bin"
+  },
+  {
+    "title": "Port Binding",
+    "url": "https://fast.wistia.com/embed/medias/icaugvwo2f.m3u8",
+    "size": 58004361,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/3602153c4e15249bf5fe31fd8d9632e3e3225ec7.bin"
+  },
+  {
+    "title": "Troubleshoot Commands",
+    "url": "https://fast.wistia.com/embed/medias/h51ql4s0vk.m3u8",
+    "size": 30687351,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/00b157d7e96e2a48edb830e9adcafdb31e6d2f76.bin"
+  },
+  {
+    "title": "Use Case: Use Docker with Development",
+    "url": "https://fast.wistia.com/embed/medias/aqr89ba4qm.m3u8",
+    "size": 57836567,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/54cecdf388237a6908ed38c7302a6aa610a3a79b.bin"
+  },
+  {
+    "title": "Docker Network",
+    "url": "https://fast.wistia.com/embed/medias/abadx9bwp2.m3u8",
+    "size": 18083408,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/38a08903151f05763132ffc4a1cc47f50c3c5461.bin"
+  },
+  {
+    "title": "Set up mongo & mongo-express",
+    "url": "https://fast.wistia.com/embed/medias/39j7ryydeu.m3u8",
+    "size": 64278406,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e897f8aefcbd78cb7f4979480a621ed3eaedf7b8.bin"
+  },
+  {
+    "title": "Connect DB with Node App",
+    "url": "https://fast.wistia.com/embed/medias/bc8803mm0x.m3u8",
+    "size": 34134866,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/c9491d8a9d816253563235a83c17e9a7348534e3.bin"
+  },
+  {
+    "title": "Docker Compose",
+    "url": "https://fast.wistia.com/embed/medias/526kgluon7.m3u8",
+    "size": 130814908,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a3abf66e9d44095b2a0d2149c53e14ab7c51acaf.bin"
+  },
+  {
+    "title": "Use Case: Dockerizing our App",
+    "url": "https://fast.wistia.com/embed/medias/p1z0fawqvn.m3u8",
+    "size": 75209375,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/62e96d86147efd89ff595616172d1c87b62294d5.bin"
+  },
+  {
+    "title": "Creating Dockerfile",
+    "url": "https://fast.wistia.com/embed/medias/imlk7l45fv.m3u8",
+    "size": 67389189,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/a7df928a7aeacca61061ebf26fd6e0c651844964.bin"
+  },
+  {
+    "title": "Publish Image on DockerHub",
+    "url": "https://fast.wistia.com/embed/medias/6mcugh2no5.m3u8",
+    "size": 28178695,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/bf65db0828dfe797873c3822ea4eb4984a894b48.bin"
+  },
+  {
+    "title": "Docker Volumes",
+    "url": "https://fast.wistia.com/embed/medias/dqfszben55.m3u8",
+    "size": 82712847,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/213196c84fe45848692511e0e4432f97478c691c.bin"
+  },
+  {
+    "title": "Volumes Commands",
+    "url": "https://fast.wistia.com/embed/medias/59v6ylm5cy.m3u8",
+    "size": 80693465,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/31f132e06471bd5fa3a762d7b19638116bf470fb.bin"
+  },
+  {
+    "title": "Revisiting Docker Network",
+    "url": "https://fast.wistia.com/embed/medias/0bza8iuux5.m3u8",
+    "size": 84385407,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e9606230b3e6e14c2ab2e24f4d80683d63d3ea21.bin"
+  },
+  {
+    "title": "Continuous Integration & Continuous Delivery",
+    "url": "https://fast.wistia.com/embed/medias/8crt8w2gsy.m3u8",
+    "size": 98457369,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/d453ec628028ef51059b9f12af59c3a6a22316be.bin"
+  },
+  {
+    "title": "CI/CD Pipeline",
+    "url": "https://fast.wistia.com/embed/medias/w4z9tfosq8.m3u8",
+    "size": 35757615,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/8ebc0088573adf8de70fc37b28dd8a0a1c1c439e.bin"
+  },
+  {
+    "title": "CI/CD Tools",
+    "url": "https://fast.wistia.com/embed/medias/esisqwfffu.m3u8",
+    "size": 19388629,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/e155443ccc0e6e71f0a80ca6f5f54449acf5339b.bin"
+  },
+  {
+    "title": "Working with Github Actions",
+    "url": "https://fast.wistia.com/embed/medias/pav80274ep.m3u8",
+    "size": 54303543,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/353fd213df6cefab9d6bead186d5559361619d92.bin"
+  },
+  {
+    "title": ".yaml for Automation",
+    "url": "https://fast.wistia.com/embed/medias/2kg1uc2kp1.m3u8",
+    "size": 65000835,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6fa98c85d84d053f26e3e050c5ba73f77796588f.bin"
+  },
+  {
+    "title": "Set up JS project with Jest",
+    "url": "https://fast.wistia.com/embed/medias/airtvqz0nl.m3u8",
+    "size": 69584431,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/70a05276420190a0fe998c7101bed3c1ceda6ea5.bin"
+  },
+  {
+    "title": "Our first CI setup",
+    "url": "https://fast.wistia.com/embed/medias/o9qadxn0b9.m3u8",
+    "size": 73596482,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/61cb9b020c32c29998eed29b94ad55fd41c14d86.bin"
+  },
+  {
+    "title": "CI/CD for MERN Project",
+    "url": "https://fast.wistia.com/embed/medias/zflmrxx4y1.m3u8",
+    "size": 36369389,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/dd4985258234166221b4704125bba1801a6c7cfc.bin"
+  },
+  {
+    "title": "Set up AWS EC2",
+    "url": "https://fast.wistia.com/embed/medias/6pmr00jpa5.m3u8",
+    "size": 87639910,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/5209c5b19a23789685dd96e52989aaf2596ceb08.bin"
+  },
+  {
+    "title": "CI/CD for Backend Module",
+    "url": "https://fast.wistia.com/embed/medias/91wyv3zh0x.m3u8",
+    "size": 150434164,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/0de0d9a96b83ae261d9aa72047635f95745a1051.bin"
+  },
+  {
+    "title": "Automate .env backup",
+    "url": "https://fast.wistia.com/embed/medias/503f3z0dun.m3u8",
+    "size": 61113565,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/6ea12d0840ee50da23d6a050edc3a30f1406346d.bin"
+  },
+  {
+    "title": "CI/CD for Frontend Module",
+    "url": "https://fast.wistia.com/embed/medias/tbrd2mf9qj.m3u8",
+    "size": 162753690,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/53064329595ee0aa2b9183ff52488c0503b422f5.bin"
+  },
+  {
+    "title": "Workflow Summary",
+    "url": "https://fast.wistia.com/embed/medias/rsuknoi6zi.m3u8",
+    "size": 49051549,
+    "mp4Url": "https://embed-ssl.wistia.com/deliveries/40f83ff0e18296390e28ce3af70dd9d209d4a168.bin"
+  }
+]

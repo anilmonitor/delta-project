@@ -76,6 +76,20 @@ export default function Navbar() {
                 >
                     Home
                 </Link>
+                <Link
+                    to="/sigma"
+                    style={{
+                        color: location.pathname === '/sigma' ? 'var(--primary)' : 'var(--text-primary)',
+                        textDecoration: 'none',
+                        fontWeight: 600,
+                        fontSize: '1.1rem',
+                        borderBottom: location.pathname === '/sigma' ? '2px solid var(--primary)' : '2px solid transparent',
+                        paddingBottom: '0.25rem',
+                        transition: 'all 0.2s ease'
+                    }}
+                >
+                    ⚡ Sigma
+                </Link>
                 {/* 
                 <Link
                     to="/download-all"
