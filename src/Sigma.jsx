@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import sigmaVideos from './sigma_videos.json';
+import { formatBytes } from './utils';
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 function getWistiaId(url) {
@@ -34,37 +35,50 @@ function AdBanner() {
     );
 }
 
-// ─── Video Card ───────────────────────────────────────────────────────────────
+// ─── Single Video Card ────────────────────────────────────────────────────────
 function SigmaVideoItem({ video, index }) {
     const [status, setStatus] = useState('idle'); // idle | downloading | done | error
     const [errorMsg, setErrorMsg] = useState('');
 
     const wistiaId = getWistiaId(video.url);
-    const watchUrl = wistiaId
-        ? `https://fast.wistia.com/medias/${wistiaId}`
-        : null;
+    const watchUrl = wistiaId ? `https://fast.wistia.com/medias/${wistiaId}` : null;
+    const hasMp4 = Boolean(video.mp4Url);
 
     const handleDownload = async () => {
-        if (!wistiaId) { setErrorMsg('Invalid Wistia ID'); setStatus('error'); return; }
         setStatus('downloading');
         setErrorMsg('');
+
         try {
-            // Try to resolve the best MP4 from Wistia's public JSON metadata
-            const metaRes = await fetch(`https://fast.wistia.com/embed/medias/${wistiaId}.json`);
-            if (!metaRes.ok) throw new Error('Could not reach Wistia metadata');
-            const meta = await metaRes.json();
+            let mp4Url = video.mp4Url;
 
-            // Collect all MP4 assets and pick highest resolution
-            const assets = meta?.media?.assets ?? [];
-            const mp4s = assets.filter(a => a.type === 'original' || a.container === 'mp4' || (a.ext === 'mp4'));
-            if (!mp4s.length) throw new Error('No downloadable MP4 found for this video.\nTry the Watch button to view it online.');
+            // Fallback: try to resolve on-the-fly via Wistia public metadata
+            if (!mp4Url && wistiaId) {
+                const metaRes = await fetch(
+                    `https://fast.wistia.com/embed/medias/${wistiaId}.json`
+                );
+                if (metaRes.ok) {
+                    const meta = await metaRes.json();
+                    const assets = meta?.media?.assets ?? [];
+                    const original = assets.find(a => a.type === 'original');
+                    const mp4s = assets.filter(
+                        a => a.container === 'mp4' || a.ext === 'mp4' || a.codec === 'h264'
+                    );
+                    mp4s.sort((a, b) => (b.width || 0) - (a.width || 0));
+                    const best = original || mp4s[0];
+                    if (best) mp4Url = best.url;
+                }
+            }
 
-            mp4s.sort((a, b) => (b.width || 0) - (a.width || 0));
-            const best = mp4s[0];
-            const mp4Url = best.url;
+            if (!mp4Url) {
+                throw new Error(
+                    'No downloadable MP4 found.\nUse the Watch button to view this video online.'
+                );
+            }
 
+            // Fetch the video as a blob — Wistia delivery URLs support CORS
             const resp = await fetch(mp4Url);
-            if (!resp.ok) throw new Error('Video stream blocked or timed out');
+            if (!resp.ok) throw new Error(`Server returned ${resp.status}. The link may have expired.`);
+
             const blob = await resp.blob();
             const blobUrl = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -73,34 +87,68 @@ function SigmaVideoItem({ video, index }) {
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
-            setTimeout(() => URL.revokeObjectURL(blobUrl), 10000);
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 15000);
+
             setStatus('done');
             setTimeout(() => setStatus('idle'), 3000);
         } catch (err) {
-            console.error(err);
+            console.error('Download error:', err);
             setErrorMsg(err.message);
             setStatus('error');
         }
     };
 
+    // ---- size badge ----
+    const sizeBadge = video.size
+        ? formatBytes(video.size)
+        : hasMp4
+            ? 'Size pending'
+            : '–';
+
+    const sizeColor = video.size
+        ? 'var(--text-secondary)'
+        : '#64748b';
+
     return (
         <div className="video-card" style={{ animationDelay: `${(index % 10) * 0.05}s` }}>
+            {/* Left: number + info */}
             <div className="video-info">
                 <div className="video-index">{index + 1}</div>
                 <div>
                     <h3 className="video-title">{video.title}</h3>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontFamily: 'monospace' }}>
-                        ID: {wistiaId || 'N/A'}
-                    </span>
+                    <div style={{ display: 'flex', gap: '1rem', marginTop: '0.2rem', flexWrap: 'wrap' }}>
+                        {/* Size */}
+                        <span style={{
+                            fontSize: '0.82rem', color: sizeColor,
+                            display: 'flex', alignItems: 'center', gap: '0.3rem',
+                        }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                            </svg>
+                            {sizeBadge}
+                        </span>
+                        {/* Wistia ID */}
+                        <span style={{ fontSize: '0.78rem', color: '#475569', fontFamily: 'monospace' }}>
+                            {wistiaId || 'N/A'}
+                        </span>
+                    </div>
                 </div>
             </div>
+
+            {/* Right: error + buttons */}
             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
                 {status === 'error' && (
-                    <span style={{ color: '#ef4444', fontSize: '0.78rem', maxWidth: '200px', textAlign: 'right', whiteSpace: 'pre-line' }}>
+                    <span style={{
+                        color: '#ef4444', fontSize: '0.78rem',
+                        maxWidth: '200px', textAlign: 'right', whiteSpace: 'pre-line',
+                    }}>
                         {errorMsg}
                     </span>
                 )}
-                {/* Watch Online button */}
+
+                {/* Watch Online */}
                 {watchUrl && (
                     <a
                         href={watchUrl}
@@ -113,40 +161,49 @@ function SigmaVideoItem({ video, index }) {
                             background: 'rgba(99,102,241,0.12)', color: '#818cf8',
                             border: '1px solid rgba(99,102,241,0.3)',
                             transition: 'background 0.2s ease',
+                            whiteSpace: 'nowrap',
                         }}
                         onMouseEnter={e => e.currentTarget.style.background = 'rgba(99,102,241,0.25)'}
                         onMouseLeave={e => e.currentTarget.style.background = 'rgba(99,102,241,0.12)'}
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M8 5v14l11-7z" />
                         </svg>
                         Watch
                     </a>
                 )}
-                {/* Download button */}
+
+                {/* Download */}
                 <button
                     className="download-btn"
                     onClick={handleDownload}
                     disabled={status === 'downloading'}
-                    style={status === 'done' ? { background: 'linear-gradient(135deg,#10b981,#059669)' } : {}}
+                    style={status === 'done'
+                        ? { background: 'linear-gradient(135deg,#10b981,#059669)' }
+                        : !hasMp4
+                            ? { opacity: 0.7 }
+                            : {}}
+                    title={!hasMp4 ? 'MP4 not yet resolved — will try live fetch' : `Download ${sizeBadge}`}
                 >
                     {status === 'downloading' ? (
                         <><span className="loader" />Downloading…</>
                     ) : status === 'done' ? (
                         <>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                 <polyline points="20 6 9 17 4 12" />
                             </svg>
                             Saved!
                         </>
                     ) : (
                         <>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                 <polyline points="7 10 12 15 17 10" />
                                 <line x1="12" y1="15" x2="12" y2="3" />
                             </svg>
-                            Download MP4
+                            Download {video.size ? `(${formatBytes(video.size)})` : 'MP4'}
                         </>
                     )}
                 </button>
@@ -155,14 +212,12 @@ function SigmaVideoItem({ video, index }) {
     );
 }
 
-// ─── Filter / Search bar ──────────────────────────────────────────────────────
+// ─── Search Bar ───────────────────────────────────────────────────────────────
 function SearchBar({ query, onChange }) {
     return (
-        <div style={{
-            position: 'relative', maxWidth: '500px', margin: '0 auto 2rem auto',
-        }}>
+        <div style={{ position: 'relative', maxWidth: '500px', margin: '0 auto 2rem auto' }}>
             <svg
-                style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)', opacity: 0.45 }}
+                style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)', opacity: 0.45, pointerEvents: 'none' }}
                 xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
             >
@@ -174,7 +229,7 @@ function SearchBar({ query, onChange }) {
                 value={query}
                 onChange={e => onChange(e.target.value)}
                 style={{
-                    width: '100%', padding: '0.75rem 1rem 0.75rem 2.8rem',
+                    width: '100%', padding: '0.75rem 2.5rem 0.75rem 2.8rem',
                     borderRadius: '10px', border: '1px solid var(--border-color)',
                     background: 'var(--card-bg)', color: 'var(--text-primary)',
                     fontSize: '0.95rem', outline: 'none', boxSizing: 'border-box',
@@ -188,8 +243,8 @@ function SearchBar({ query, onChange }) {
                     onClick={() => onChange('')}
                     style={{
                         position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)',
-                        background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-secondary)',
-                        fontSize: '1.1rem', lineHeight: 1, padding: 0,
+                        background: 'none', border: 'none', cursor: 'pointer',
+                        color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: 1, padding: 0,
                     }}
                 >✕</button>
             )}
@@ -197,27 +252,25 @@ function SearchBar({ query, onChange }) {
     );
 }
 
-// ─── Stats bar ────────────────────────────────────────────────────────────────
+// ─── Stats Bar ────────────────────────────────────────────────────────────────
 function StatsBar({ total, shown }) {
+    const withMp4 = sigmaVideos.filter(v => v.mp4Url).length;
+
     return (
-        <div style={{
-            display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap',
-            marginBottom: '2rem',
-        }}>
+        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2rem' }}>
             {[
                 { label: 'Total Lectures', value: total, icon: '🎬' },
                 { label: 'Showing', value: shown, icon: '🔍' },
-                { label: 'Course', value: 'SIGMA 9.0', icon: '⚡' },
+                { label: 'Downloadable', value: withMp4, icon: '✅' },
                 { label: 'Stack', value: 'MERN', icon: '💻' },
             ].map(s => (
                 <div key={s.label} style={{
                     background: 'var(--card-bg)', border: '1px solid var(--border-color)',
-                    borderRadius: '12px', padding: '0.75rem 1.5rem', textAlign: 'center',
-                    minWidth: '110px',
+                    borderRadius: '12px', padding: '0.75rem 1.5rem', textAlign: 'center', minWidth: '110px',
                 }}>
                     <div style={{ fontSize: '1.4rem' }}>{s.icon}</div>
-                    <div style={{ fontWeight: 700, fontSize: '1.25rem', color: 'var(--primary)' }}>{s.value}</div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '2px' }}>{s.label}</div>
+                    <div style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--primary)' }}>{s.value}</div>
+                    <div style={{ fontSize: '0.76rem', color: 'var(--text-secondary)', marginTop: '2px' }}>{s.label}</div>
                 </div>
             ))}
         </div>
@@ -234,16 +287,17 @@ export default function Sigma() {
 
     return (
         <div className="app-container">
-            {/* Header */}
             <header>
-                <h1 style={{ background: 'linear-gradient(135deg,#6366f1,#8b5cf6,#06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                <h1 style={{
+                    background: 'linear-gradient(135deg,#6366f1,#8b5cf6,#06b6d4)',
+                    WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                }}>
                     Apna College SIGMA 9.0 — MERN Stack
                 </h1>
                 <p className="header-subtitle">
-                    All {sigmaVideos.length} lecture videos by Apna College. Watch online or download MP4 in one click.
+                    All {sigmaVideos.length} lecture videos · Watch online or download MP4 directly to your device.
                 </p>
 
-                {/* Warning */}
                 <div style={{
                     marginTop: '1.5rem', padding: '1rem 1.5rem',
                     background: 'rgba(239,68,68,0.1)', border: '2px dashed #ef4444',
@@ -255,20 +309,16 @@ export default function Sigma() {
                         <span role="img" aria-label="warning">⚠️</span>
                     </h2>
                     <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.95rem', fontWeight: 500, marginBottom: 0 }}>
-                        These video links are temporary and will be removed soon. Save them to your device immediately!
+                        These video links are temporary. Save them to your device immediately to avoid losing access!
                     </p>
                 </div>
             </header>
 
-            {/* Stats */}
             <StatsBar total={sigmaVideos.length} shown={filtered.length} />
-
-            {/* Search */}
             <SearchBar query={query} onChange={setQuery} />
 
             <AdBanner />
 
-            {/* Video list */}
             <main className="video-list">
                 {filtered.length === 0 ? (
                     <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>
