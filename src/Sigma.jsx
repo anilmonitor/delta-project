@@ -501,7 +501,7 @@ export default function Sigma() {
                 ) : (
                     filtered.map((video, i) => (
                         <React.Fragment key={video.url + i}>
-                            <SigmaVideoItem video={video} index={i} previewOnly={i === 0} />
+                            <SigmaVideoItem video={video} index={i} />
                             {(i + 1) % 5 === 0 && (
                                 <div style={{ textAlign: 'center', marginBottom: '1.5rem', marginTop: '-0.5rem' }}>
                                     <a
